@@ -1,0 +1,197 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"d",
+				"dotdotdot"
+			],
+			[
+				"img",
+				"img"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/adamconder/Projects/adamconder/adamconder/beta/index.html",
+		"/Users/adamconder/Projects/adamconder/adamconder/beta/css/style.css",
+		"/Users/adamconder/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/system/cms/modules/contact/plugin-new.php",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/system/cms/modules/pages/controllers/pages.php",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/system/cms/libraries/MY_Email.php",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/addons/default/themes/pcn/views/modules/firesale_search/search.php",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/addons/default/themes/pcn/views/modules/firesale-search/search.php",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/addons/default/themes/pcn/views/modules/firesale/search.php",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/addons/default/themes/pcn/views/modules/blog/view.php",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/addons/default/themes/pcn/views/layouts/default.html",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/addons/shared_addons/themes/conjuction/css/style.css",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/system/cms/modules/contact/plugin.php",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/addons/default/modules/firesale/css/firesale.css",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/addons/default/modules/firesale_search/css/search.css",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/.hgignore",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/addons/default/themes/pcn/views/partials/our-services.html",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/addons/default/themes/pcn/views/partials/footer.html",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/addons/default/themes/pcn/views/partials/header.html",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/addons/default/themes/pcn/views/partials/social_networks.html",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/addons/shared_addons/modules/sliders/css/nivo-slider.css",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/addons/default/themes/pcn/views/modules/firesale/product.php",
+		"/Users/adamconder/Projects/proudly-carbon-neutral/system/cms/modules/blog/controllers/blog.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"limit",
+			"How many records should we show per page",
+			"pkey",
+			"button",
+			"recaptcha",
+			"helpers/recaptchalib_helper",
+			"get_page_si",
+			"#search",
+			"#search input",
+			"search",
+			"black",
+			"captcha",
+			"hover",
+			"title",
+			"blog"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "adamconder.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 219.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
