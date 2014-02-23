@@ -71,9 +71,9 @@ $db[PYRO_STAGING] = array(
 // Production
 $db[PYRO_PRODUCTION] = array(
 	'hostname'		=> 	'localhost',
-	'username'		=> 	'root',
-	'password'		=> 	'root',
-	'database'		=> 	'adamconder',
+	'username'		=> 	'adamcond_adam',
+	'password'		=> 	'jkaksynd91august27',
+	'database'		=> 	'adamcond_adamconder',
 	'dbdriver' 		=> 	'mysqli',
 	'pconnect' 		=>	FALSE,
 	'db_debug' 		=>	FALSE,
