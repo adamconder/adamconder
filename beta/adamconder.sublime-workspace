@@ -15,6 +15,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "adamconder.sublime-workspace",
+			"settings":
+			{
+				"buffer_size": 4416,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "adamconder.sublime-project",
+			"settings":
+			{
+				"buffer_size": 125,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -116,8 +132,64 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "adamconder.sublime-workspace",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "adamconder.sublime-project",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

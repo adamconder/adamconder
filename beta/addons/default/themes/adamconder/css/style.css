@@ -1,0 +1,703 @@
+/* -----
+    Base Adjustments & HTML5 display definitions
+----- */
+
+
+
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+* { 
+text-rendering: optimizeLegibility; font-size: 100%; -webkit-text-size-adjust: 100%; 
+-ms-text-size-adjust: 100%; }
+html, body { height: 100%; }
+
+::-moz-selection { background: #DD1251; color: #ffffff; text-shadow: none; }
+::selection { color: #ffffff; text-shadow: none; }
+
+/*
+Stylesheet for adamconder.com
+Author: Adam Conder
+*/
+
+/* -----
+    @font-face Definitions
+----- */
+
+@font-face {
+    font-family: 'uniman';
+    src: url('../fonts/uniman-webfont.eot');
+    src: url('../fonts/uniman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/uniman-webfont.woff') format('woff'),
+         url('../fonts/uniman-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+Fonts and titles
+*/
+
+h1 {
+	font-size: 34px;
+}
+
+h2 { font-size: 28px; }
+h3 { font-size: 24px; }
+h4 { font-size: 22px; color: #c0757b; }
+
+/*
+Links and states
+*/
+
+a, a:hover, a:visited, a:active {
+	color: #c0757b;
+	text-decoration: none;
+}
+
+body {
+	background: #f3f3f3;
+	font-family: 'uniman';
+	font-weight: normal;
+	text-align: left;
+	font-size: 16px;
+	letter-spacing: 1px;
+	color: #5b5b5b;
+	padding: 0;
+	margin: 0;
+}
+
+
+/*header*/
+
+header {
+	width:100%;
+	height: auto;
+}
+
+header > section#logo {
+	width:auto;
+	height:auto;
+	margin:35px auto 35px auto;
+	display: block;
+}
+
+header > section#logo a {
+    background: url(../img/logo.png) center center no-repeat;
+    display: block;
+    height: 130px;
+    margin: 25px auto 25px auto;
+    text-indent: -999999em;
+    width: 130px;
+    text-align: center;
+}
+
+
+/* -----
+    ClearFix
+----- */
+
+.clearFix
+{
+	clear: both;
+	height: 1%;
+	visibility: hidden;
+	display: block;
+}
+
+
+/* -----
+    Navigation definitions
+----- */
+
+nav#primary
+{
+	width: auto;
+	display: block;
+	margin: 40px auto 0 auto;
+	text-align: center;
+}
+
+nav#primary ul
+{
+	list-style: none;
+	font-size: 24px;
+	text-align: center;
+	text-transform: lowercase;
+	margin: 0 auto;
+	display: inline-block;
+	border-bottom: 1px solid #e5e2e2;
+	padding: 0 0 40px 0;
+}
+
+nav#primary ul li
+{
+	display: inline-block;
+	margin: 0 60px 0 0;
+	text-align: center;
+}
+
+nav#primary ul li a
+{
+	text-align: center;
+}
+
+nav#primary ul li:last-child
+{
+	margin: 0;
+	padding: 0;
+}
+
+@media only screen and (max-width : 568px) {
+	/*iphone in landscape or portrait*/
+	nav#primary ul
+	{
+		display: block;
+		width: 80%;
+	}
+
+	nav#primary ul li
+	{
+		display: block;
+		margin: 0 0 10px 0;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+	/*iphone in landscape or portrait*/
+
+	nav#primary ul
+	{
+		display: block;
+		width: 80%;
+	}
+
+	nav#primary ul li
+	{
+		display: block;
+		margin: 0 0 10px 0;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+	nav#primary ul
+	{
+		display: block;
+		width: 80%;
+	}
+
+	nav#primary ul li
+	{
+		display: block;
+		margin: 0 0 10px 0;
+	}
+}
+
+
+/* -----
+    Content headers
+----- */
+
+section#portfolio-blurb
+{
+	border-bottom: 1px solid #e5e2e2;
+	height: auto;
+	display: block;
+}
+
+section#portfolio-blurb h3
+{
+	text-align: center;
+	line-height: 145px;
+}
+
+/* -----
+    Content definitions
+----- */
+
+section#content
+{
+	width: 80%;
+	margin: 0 auto 20px auto;
+	display: block;
+}
+
+
+/* -----
+    Project definitions
+----- */
+
+section#projects-container
+{
+	display: block;
+
+}
+
+section#projects-container > h4
+{
+	text-align: center;
+	padding-top: 20px;
+}
+
+section#projects-container div.project
+{
+	border-bottom: 1px solid #e5e2e2;
+	border-top: 1px solid #e5e2e2;
+	height: auto;
+	min-height: 350px;
+	display: block;
+	clear: both;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+/*section#projects-container div.project:last-child
+{
+	margin-bottom: 50px;
+}*/
+
+/* -----
+    Individual Projects
+----- */
+/*
+div.project > div.project-title, div.project-description, div.project-responsibility div.project-tags
+{
+	float: left;
+	clear: both;
+}*/
+
+div.project > div.project-information
+{
+	float: left;
+	width: 60%;
+}
+
+
+/* Project title */
+
+div.project > div.project-information > div.project-title
+{
+	border-bottom: 1px solid #e5e2e2;
+	width: 80%;
+	margin-bottom: 20px;
+	margin-top: -20px;
+}
+
+div.project > div.project-information p.project-slogan
+{
+	color: #8d8d8d;
+	font-weight: bold;
+}
+
+div.project div.project-title > h4 
+{
+	font-size: 30px;
+}
+
+/* Project slogan */
+div.project div.project-title > p.project-slogan
+{
+	font-size: 14px;
+	line-height: 14px;
+	margin-top: -32px;
+	text-transform: lowercase;
+}
+
+/* Project description */
+
+div.project > div.project-information > div.project-description > p:first-child, div.project > div.project-information > div.project-responsibility > p:first-child
+{
+	font-style: italic;
+	color: #8d8d8d;
+}
+
+div.project > div.project-information p
+{
+	font-size: 14px;
+	color: #b1b1b1;
+}
+
+/* Project Responsibility */
+
+/* Project Tags */
+
+div.project > div.project-information > div.project-tags
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+div.project > div.project-information > div.project-tags > span
+{
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	background-color: #c0757b;
+	color: #fff;
+	font-size: 11px;
+}
+
+div.project > div.project-information > div.project-tags > span:last-child
+{
+	margin-right: 0;
+}
+
+/* Project image */
+div.project > div.project-image 
+{
+	background: url(../img/iPhone.png) center bottom no-repeat;
+	width: 40%;
+	max-width: 327px;
+	height: 330px;
+	position: absolute;
+	bottom: -1px;
+	right: 20px;
+	float: right;
+}
+
+div.project > div.project-image > img 
+{
+	margin: 90px auto 0 65px;
+	display: block;
+}
+
+
+/* -----
+
+    Blog Heading
+
+----- */
+
+section#blog-blurb
+{
+	border-bottom: 1px solid #e5e2e2;
+	height: auto;
+	display: block;
+}
+
+section#blog-blurb h3
+{
+	text-align: center;
+	line-height: 125px;
+}
+
+
+/* -----
+
+    Blog
+
+----- */
+
+
+body.blog > div.container > section#content > h4
+{
+	text-align: center;
+	padding-top: 20px;
+}
+
+article.post div.post-information > div.post-title > h4
+{
+	font-size: 30px;
+}
+
+article.post
+{
+	border-bottom: 1px solid #e5e2e2;
+	/*border-top: 1px solid #e5e2e2;*/
+	height: auto;
+	display: block;
+	clear: both;
+	position: relative;
+}
+
+article.post:last-child
+{
+	margin-bottom: 20px;
+}
+
+article.post div.post-information
+{
+	border-bottom: 1px solid #e5e2e2;
+	margin-bottom: 20px;
+}
+
+article.post div.post-information > div.post-title
+{
+	float: left;
+	width: auto;
+	margin: -20px 0 0 10px;
+}
+
+article.post div.post-information > div.post-date
+{
+	float: right;
+	width: auto;
+	font-size: 14px;
+	text-align: right;
+	margin: 10px 10px 10px 0;
+}
+
+article.post div.post-information > div.post-date p
+{
+	line-height: 6px;
+}
+
+article.post div.post-information > div.post-title > p.post-slogan
+{
+	font-size: 14px;
+	line-height: 6px;
+	margin-top: -32px;
+	text-transform: lowercase;
+}
+
+article.post div.post-information > div.post-date span.post-keyword
+{
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	background-color: #c0757b;
+	color: #fff;
+	font-size: 11px;
+}
+
+
+article.post div.post-information > div.post-date span.post-keyword a
+{
+	display: block;
+	color: #ffffff;
+}
+
+article.post div.post-information > div.post-date span.post-keyword:last-child
+{
+	margin-right: 0;
+}
+
+article.post > div.post-featured-image
+{
+	width:100%;
+	height: auto;
+	display:block;
+	clear: both;
+}
+
+article.post > div.post-featured-image > img
+{
+	width: 100%;
+	height: auto;
+	display: block;
+	clear: both;
+}
+
+article.post > div.post_intro > img, article.post > div.post_body > img
+{
+	float: left;
+	margin: 0 25px 20px 0;
+	background: #ffffff;
+	padding: 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+article.post > div.post_intro, article.post > div.post_body
+{
+	font-size: 14px;
+	color: #b1b1b1;
+	margin: 25px 0 25px 0;
+}
+
+article.post > div.post-links
+{
+	display: inline-block;
+	margin-bottom: 20px;
+	padding: 5px 10px;
+	background-color: #c0757b;
+	color: #fff;
+	font-size: 11px;
+	text-transform: lowercase;
+}
+
+article.post > div.post-links a
+{
+	display: block;
+	color: #ffffff;
+}
+
+
+
+/* -----
+
+    Blog Detail
+
+----- */
+
+/*div#existing-comments
+{
+	width: 40%;
+}*/
+
+div#existing-comments > h4
+{
+	border-bottom: 1px solid #e5e2e2;
+	margin: 0;
+	padding: 20px 0 20px 0;
+}
+
+
+/* -----
+
+    Forms
+
+----- */
+
+@media only screen and (min-width : 568px) {
+	/*iphone in landscape or portrait*/
+	form
+	{
+		width: 40%;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+	/*iphone in landscape or portrait*/
+	form
+	{
+		width: 100%;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	form
+	{
+		width: 100%;
+	}
+}
+
+form > h4 
+{
+	/*border-top: 1px solid #e5e2e2;*/
+	/*padding: 20px 0 0 0;*/
+}
+
+form label, form textarea, form select
+{
+	display: block;
+	clear: both;
+}
+
+form label
+{
+	font-size: 20px;
+	color: #c0757b;
+}
+
+/*form > div.form_textarea > label
+{
+	font-size: 22px; 
+	color: #c0757b;
+}*/
+
+form textarea, form input, form select
+{
+	border: none;
+	outline-style: none;
+	padding: 5px;
+	font-size: 12px;
+	width: 100%;
+	margin: 20px 0 20px 0;
+}
+
+form input 
+{
+	height: 30px;
+}
+
+form input[type="file"]
+{
+	height: auto;
+}
+
+form span.required
+{
+	/*text-indent: 20px;*/
+}
+
+form > div.form_submit > input, form > span.contact-button > input, form input[type="file"], form select
+{
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 10px 10px;
+	background-color: #c0757b;
+	color: #fff;
+	font-size: 11px;
+	text-transform: lowercase;
+	border: none;
+	outline: none;
+	width: auto
+}
+
+form select 
+{
+	border: 0;
+   border-radius: 0;
+   background-image: url(../img/downarrow.png);
+   background-position: right 5px center;
+   background-repeat: no-repeat;
+   background-size: 10px;
+   -webkit-appearance: none;
+}
+
+/* -----
+
+    Comments
+
+----- */
+
+div.comment
+{
+	padding:20px 20px 0 20px;
+	border-bottom: 1px solid #e5e2e2;
+	display: block;
+	width: auto;
+}
+
+div.comment > div.image > img
+{
+	float: left;
+	margin: 0 25px 20px 0;
+	background: #ffffff;
+	padding: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+div.comment > div.details
+{
+	float: left;
+	font-size: 14px;
+}
+
+div.comment > div.details > div.name > a, div.comment > div.details p
+{
+	line-height: 10px;
+}
+
+div.comment > div.details > div.date p
+{
+	font-size: 12px;
+	font-style: italic;
+}
+
+div.comment > div.details > div.content p
+{
+	line-height: 18px;
+	color: #b1b1b1;
+}
