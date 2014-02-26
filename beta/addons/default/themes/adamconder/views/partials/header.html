@@ -29,11 +29,14 @@
 	<!-- {{ theme:css file="workless.css" }} -->
 	{{ theme:css file="style.css" }}
 
+	<!-- Syntax highlighter -->
+	<link rel="stylesheet" href="{{ url:base }}addons/default/themes/adamconder/js/highlight.js/src/styles/solarized_light.css" type="text/css" />
+
   	<!-- End CSS-->
 
 	<!-- Googlelicious -->
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold" type="text/css" />
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold" type="text/css" />
+<!-- 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold" type="text/css" />
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,bold" type="text/css" /> -->
 
 	<!-- Load up some favicons -->
   	{{ theme:favicon }}
@@ -41,15 +44,17 @@
   	<!-- All JavaScript at the bottom, except for Modernizr. -->
   	{{ theme:js file="libs/modernizr.js" }}
   	{{ theme:js file="libs/jquery.js" }}
+  	{{ theme:js file="highlight.js/src/highlight.js" }}
 
-	
+	<script>hljs.initHighlightingOnLoad();</script>
+
 	{{ template:metadata }}
 	
 	<!-- Google Analytics -->
 	{{ integration:analytics }}
 </head>
 
-<body class="{{ url:segments segment="1" default="home" }}" onload="prettyPrint()">
+<body class="{{ url:segments segment="1" default="home" }}">
 	
 	<!-- container -->
 	<div class="container">	
