@@ -257,6 +257,7 @@ div.project > div.project-title, div.project-description, div.project-responsibi
 div.project > div.project-information
 {
 	width: 60%;
+	float: left;
 }
 
 /* Project title */
@@ -339,13 +340,10 @@ div.project > div.project-information > div.project-tags > span:last-child
 div.project > div.project-image 
 {
 	width: 40%;
-	min-width: 327px;
 	height: 330px;
-	position: absolute;
-	right: 0;
-	bottom: 0;
 	background-position: center bottom;
 	background-repeat: no-repeat;
+	float: left;
 }
 
 
@@ -358,7 +356,7 @@ div.project > div.project-image
 
 	div.project > div.project-image 
 	{
-		position: relative;
+		float: none;
 		width: 100%;
 	}
 
