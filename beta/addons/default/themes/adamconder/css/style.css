@@ -196,7 +196,7 @@ section#portfolio-blurb
 section#portfolio-blurb h3
 {
 	text-align: center;
-	line-height: 145px;
+	line-height: 300%;
 }
 
 /* -----
@@ -397,7 +397,7 @@ section#blog-blurb
 section#blog-blurb h3
 {
 	text-align: center;
-	line-height: 145px;
+	line-height: 300%;
 }
 
 
