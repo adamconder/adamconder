@@ -2,15 +2,21 @@
     Base Adjustments & HTML5 display definitions
 ----- */
 
-
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,700,300italic);
 
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 
 * { 
-text-rendering: optimizeLegibility; font-size: 100%; -webkit-text-size-adjust: 100%; 
--ms-text-size-adjust: 100%; }
+/*font-family: 'uniman';*/
+font-family: 'Roboto', sans-serif;
+font-weight: 100;
+text-rendering: optimizeLegibility; 
+font-size: 100%;
+ -webkit-text-size-adjust: 100%; 
+-ms-text-size-adjust: 100%;
+ }
 html, body { height: 100%; }
 
 ::-moz-selection { background: #c0757b; color: #ffffff; text-shadow: none; }
@@ -33,17 +39,15 @@ Author: Adam Conder
          url('../fonts/uniman-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 
 /*
 Fonts and titles
 */
 
-h1 {
-	font-size: 34px;
-}
+/*h1, h2, h3, h4 { font-weight: 300; }*/
 
+h1 { font-size: 34px; }
 h2 { font-size: 28px; }
 h3 { font-size: 24px; }
 h4 { font-size: 22px; color: #c0757b; }
@@ -61,7 +65,6 @@ a:hover, a:visited, a:active {
 
 body {
 	background: #f3f3f3;
-	font-family: 'uniman';
 	font-weight: normal;
 	text-align: left;
 	font-size: 16px;
@@ -197,6 +200,8 @@ section#portfolio-blurb h3
 {
 	text-align: center;
 	line-height: 300%;
+	font-weight: 300;
+	font-style: italic;
 }
 
 /* -----
@@ -269,12 +274,6 @@ div.project > div.project-information > div.project-title
 	width: 80%;
 	margin-bottom: 20px;
 	margin-top: -20px;
-}
-
-div.project > div.project-information p.project-slogan
-{
-	/*color: #8d8d8d;*/
-	font-weight: bold;
 }
 
 div.project div.project-title > h4 
@@ -398,6 +397,8 @@ section#blog-blurb h3
 {
 	text-align: center;
 	line-height: 300%;
+	font-weight: 300;
+	font-style: italic;
 }
 
 
