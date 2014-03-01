@@ -96,6 +96,21 @@ header > section#logo a {
     text-align: center;
 }
 
+/*
+
+	Container
+
+*/
+
+@media only screen and (min-width : 1200px) {
+	/*iphone in landscape or portrait*/
+	div.container
+	{
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
 
 /* -----
     ClearFix
@@ -166,38 +181,6 @@ nav#primary ul li:last-child
 		margin: 0 0 10px 0;
 	}
 }
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
-	/*iphone in landscape or portrait*/
-
-	nav#primary ul
-	{
-		display: block;
-		width: 80%;
-	}
-
-	nav#primary ul li
-	{
-		display: block;
-		margin: 0 0 10px 0;
-	}
-}
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-	nav#primary ul
-	{
-		display: block;
-		width: 80%;
-	}
-
-	nav#primary ul li
-	{
-		display: block;
-		margin: 0 0 10px 0;
-	}
-}
-
 
 /* -----
     Content headers
@@ -377,6 +360,7 @@ div.project > div.project-image
 	div.project > div.project-image 
 	{
 		position: relative;
+		width: 100%;
 	}
 
 	div.project > div.project-information
@@ -554,16 +538,6 @@ article.post > div.post_intro > img, article.post > div.post_body > img
 	}
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (max-device-width : 480px) {
-	/*iphone in landscape or portrait*/
-	article.post > div.post_intro > img, article.post > div.post_body > img
-	{
-		width: 90%;
-		float: none;
-		margin: 0 0 20px 0;
-	}
-}
-
 article.post > div.post_intro, article.post > div.post_body
 {
 	/*font-size: 14px;*/
@@ -620,8 +594,7 @@ div#existing-comments > h4
 	}
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (max-device-width : 480px) {
-	/*iphone in landscape or portrait*/
+@media only screen and (max-width: 568px ) {
 	form
 	{
 		width: 100%;
