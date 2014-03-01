@@ -452,16 +452,33 @@ article.post div.post-information > div.post-title
 {
 	float: left;
 	width: auto;
-	margin: -20px 0 0 10px;
+	margin: -20px 10% 0 1%;
 }
 
 article.post div.post-information > div.post-date
 {
 	float: right;
 	width: auto;
-	/*font-size: 14px;*/
 	text-align: right;
 	margin: 10px 10px 10px 0;
+}
+
+@media only screen and (max-width : 568px) {
+	/*iphone in landscape or portrait*/
+	article.post div.post-information > div.post-title
+	{
+		float: none;
+		width: 100%;
+		margin: -5% 10% 0 1%;
+	}
+
+	article.post div.post-information > div.post-date
+	{
+		float: none;
+		width: 100%;
+		text-align: left;
+		margin: 10% 1% 1% 1%;
+	}
 }
 
 article.post div.post-information > div.post-date p
