@@ -256,7 +256,6 @@ div.project > div.project-title, div.project-description, div.project-responsibi
 
 div.project > div.project-information
 {
-	float: left;
 	width: 60%;
 }
 
