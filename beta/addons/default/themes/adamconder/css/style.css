@@ -579,6 +579,15 @@ article.post > div.post-links a:hover
 	background-color: #d09498;
 }
 
+@media only screen and (max-width : 568px) {
+	/*iphone in landscape or portrait*/
+	article.post > div.post-links a
+	{
+		text-align: center;
+		display: block;
+	}
+}
+
 /* -----
 
     Blog Detail
