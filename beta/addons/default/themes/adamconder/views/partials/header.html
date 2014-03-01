@@ -13,7 +13,7 @@
 
   	<title>{{ settings:site_name }} &raquo; {{ template:title }}</title>
 
-  	<meta name="author" content="Scott Parry - iKreativ">
+  	<meta name="author" content="Adam Conder">
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 
@@ -44,9 +44,7 @@
   	<!-- All JavaScript at the bottom, except for Modernizr. -->
   	{{ theme:js file="libs/modernizr.js" }}
   	{{ theme:js file="libs/jquery.js" }}
-  	{{ theme:js file="highlight.js/src/highlight.js" }}
-
-	<script>hljs.initHighlightingOnLoad();</script>
+  	{{# theme:js file="highlight.js/src/highlight.js" #}}
 
 	{{ template:metadata }}
 	
