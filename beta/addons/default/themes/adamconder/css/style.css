@@ -613,21 +613,6 @@ div#existing-comments > h4
 
 ----- */
 
-@media only screen and (min-width : 568px) {
-	/*iphone in landscape or portrait*/
-	form
-	{
-		width: 40%;
-	}
-}
-
-@media only screen and (max-width: 568px ) {
-	form
-	{
-		width: 100%;
-	}
-}
-
 form > h4 
 {
 	/*border-top: 1px solid #e5e2e2;*/
@@ -695,12 +680,32 @@ form > div.form_submit > input, form > span.contact-button > input, form input[t
 form select 
 {
 	border: 0;
-   border-radius: 0;
-   background-image: url(../img/downarrow.png);
-   background-position: right 5px center;
-   background-repeat: no-repeat;
-   background-size: 10px;
-   -webkit-appearance: none;
+	border-radius: 0;
+	background-image: url(../img/downarrow.png);
+	background-position: right 5px center;
+	background-repeat: no-repeat;
+	background-size: 10px;
+	-webkit-appearance: none;
+}
+
+@media only screen and (min-width : 568px) {
+	/*iphone in landscape or portrait*/
+	form
+	{
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 568px ) {
+	form
+	{
+		width: 100%;
+	}
+
+	form select
+	{
+		width: 100%;
+	}
 }
 
 /* -----
