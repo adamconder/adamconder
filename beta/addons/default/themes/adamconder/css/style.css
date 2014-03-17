@@ -9,14 +9,16 @@ audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 
 * { 
-/*font-family: 'uniman';*/
-font-family: 'Roboto', sans-serif;
-font-weight: 100;
-text-rendering: optimizeLegibility; 
-font-size: 100%;
- -webkit-text-size-adjust: 100%; 
--ms-text-size-adjust: 100%;
+	/*font-family: 'uniman';*/
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	text-rendering: optimizeLegibility; 
+	font-size: 100%;
+ 	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
  }
+
 html, body { height: 100%; }
 
 ::-moz-selection { background: #c0757b; color: #ffffff; text-shadow: none; }
@@ -31,7 +33,7 @@ Author: Adam Conder
     @font-face Definitions
 ----- */
 
-@font-face {
+/*@font-face {
     font-family: 'uniman';
     src: url('../fonts/uniman-webfont.eot');
     src: url('../fonts/uniman-webfont.eot?#iefix') format('embedded-opentype'),
@@ -39,7 +41,7 @@ Author: Adam Conder
          url('../fonts/uniman-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 
 /*
 Fonts and titles
@@ -64,7 +66,7 @@ a:hover, a:visited, a:active {
 }
 
 body {
-	background: #f3f3f3;
+	background: #f2f2f2;
 	font-weight: normal;
 	text-align: left;
 	font-size: 16px;
@@ -213,6 +215,9 @@ section#content
 	width: 80%;
 	margin: 0 auto 20% auto;
 	display: block;
+
+	-webkit-animation: fade-in 600ms ease-out;
+	animation: fade-in 600ms ease-out;
 }
 
 
@@ -271,7 +276,6 @@ div.project > div.project-information
 div.project > div.project-information > div.project-title
 {
 	border-bottom: 1px solid #e5e2e2;
-	width: 80%;
 	margin-bottom: 20px;
 	margin-top: -20px;
 }
@@ -314,14 +318,23 @@ div.project > div.project-information > div.project-tags > span
 	margin-right: 10px;
 	margin-bottom: 10px;
 	padding: 5px 10px;
-	background-color: #c0757b;
-	color: #fff;
-	font-size: 11px;
+	color: #c0757b;
+	background-color: transparent;
+	font-size: 12px;
+	text-transform: lowercase;
+	border: 1px solid #c0757b;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 div.project > div.project-information > div.project-tags > span:hover
 {
 	background-color: #d09498;
+	color: #ffffff;
+
+	-webkit-transition: background-color 0.5s ease. color 0.5s ease;
+	transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 div.project > div.project-information > div.project-tags > span:last-child
@@ -501,14 +514,21 @@ article.post div.post-information > div.post-date span.post-keyword a
 	margin-right: 10px;
 	margin-bottom: 10px;
 	padding: 5px 10px;
-	color: #fff;
-	font-size: 11px;
-	background-color: #c0757b;
+	color: #c0757b;
+	font-size: 12px;
+	background-color: transparent;
+	border: 1px solid #c0757b;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 article.post div.post-information > div.post-date span.post-keyword a:hover
 {
 	background-color: #d09498;
+	color: #ffffff;
+	-webkit-transition: background-color 0.5s ease. color 0.5s ease;
+	transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 article.post div.post-information > div.post-date span.post-keyword:last-child
@@ -530,6 +550,9 @@ article.post > div.post-featured-image > img
 	height: auto;
 	display: block;
 	clear: both;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 article.post > div.post_intro > img, article.post > div.post_body > img
@@ -566,18 +589,26 @@ article.post > div.post_intro, article.post > div.post_body
 
 article.post > div.post-links a
 {
-	color: #ffffff;
+	color: #c0757b;
 	display: inline-block;
 	margin-bottom: 20px;
 	padding: 5px 10px;
-	background-color: #c0757b;
-	font-size: 11px;
+	background-color: transparent;
+	font-size: 12px;
 	text-transform: lowercase;
+	border: 1px solid #c0757b;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 article.post > div.post-links a:hover
 {
 	background-color: #d09498;
+	color: #ffffff;
+
+	-webkit-transition: background-color 0.5s ease. color 0.5s ease;
+	transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 @media only screen and (max-width : 568px) {
@@ -614,12 +645,6 @@ div#existing-comments > h4
 
 ----- */
 
-form > h4 
-{
-	/*border-top: 1px solid #e5e2e2;*/
-	/*padding: 20px 0 0 0;*/
-}
-
 form label, form textarea, form select
 {
 	display: block;
@@ -631,12 +656,6 @@ form label
 	font-size: 20px;
 	color: #c0757b;
 }
-
-/*form > div.form_textarea > label
-{
-	font-size: 22px; 
-	color: #c0757b;
-}*/
 
 form textarea, form input, form select
 {
@@ -651,6 +670,13 @@ form textarea, form input, form select
 form input 
 {
 	height: 30px;
+}
+
+form input, form textarea 
+{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 
 form input[type="file"]
@@ -669,24 +695,36 @@ form > div.form_submit > input, form > span.contact-button > input, form input[t
 	margin-right: 10px;
 	margin-bottom: 10px;
 	padding: 10px 10px;
-	background-color: #c0757b;
-	color: #fff;
-	font-size: 11px;
+	background-color: transparent;
+	color: #c0757b;
+	font-size: 12px;
 	text-transform: lowercase;
-	border: none;
+	border: 1px solid #c0757b;
 	outline: none;
-	width: auto
+	width: auto;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	height: auto;
+}
+
+input[type="submit"]:hover
+{
+	background-color: #d09498;
+	color: #ffffff;
+
+	-webkit-transition: background-color 0.5s ease. color 0.5s ease;
+	transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 form select 
 {
-	border: 0;
-	border-radius: 0;
 	background-image: url(../img/downarrow.png);
 	background-position: right 5px center;
 	background-repeat: no-repeat;
 	background-size: 10px;
 	-webkit-appearance: none;
+	background-color: transparent;
 }
 
 @media only screen and (min-width : 568px) {
