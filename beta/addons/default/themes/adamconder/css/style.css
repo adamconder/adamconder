@@ -13,7 +13,6 @@ audio:not([controls]) { display: none; }
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	text-rendering: optimizeLegibility; 
-	font-size: 100%;
  	-webkit-text-size-adjust: 100%; 
 	-ms-text-size-adjust: 100%;
 	-webkit-font-smoothing: antialiased;
@@ -548,11 +547,15 @@ article.post > div.post-featured-image > img
 {
 	width: 100%;
 	height: auto;
+	max-height: 400px;
 	display: block;
 	clear: both;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+
+	-webkit-animation: fade-in 600ms ease-out;
+	animation: fade-in 600ms ease-out;
 }
 
 article.post > div.post_intro > img, article.post > div.post_body > img
@@ -620,6 +623,14 @@ article.post > div.post-links a:hover
 	}
 }
 
+blockquote
+{
+	font-size: 30px;
+	text-align: center;
+	font-weight: 300;
+	font-style: italic;
+}
+
 /* -----
 
     Blog Detail
@@ -659,12 +670,13 @@ form label
 
 form textarea, form input, form select
 {
-	border: none;
+	border: 1px solid #c0757b;
 	outline-style: none;
 	padding: 5px;
-	font-size: 12px;
+	font-size: 14px;
 	width: 100%;
 	margin: 20px 0 20px 0;
+	background-color: transparent;
 }
 
 form input 
@@ -731,7 +743,7 @@ form select
 	/*iphone in landscape or portrait*/
 	form
 	{
-		width: 40%;
+		width: 50%;
 	}
 }
 
@@ -739,6 +751,12 @@ form select
 	form
 	{
 		width: 100%;
+	}
+
+	form > div.form_submit > input, form > span.contact-button > input, form input[type="file"]
+	{
+		width:	100%;
+		margin-right: none;
 	}
 
 	form select
@@ -775,7 +793,6 @@ div.comment > div.image > img
 div.comment > div.details
 {
 	float: left;
-	/*font-size: 14px;*/
 }
 
 div.comment > div.details > div.name > a, div.comment > div.details p
@@ -792,5 +809,4 @@ div.comment > div.details > div.date p
 div.comment > div.details > div.content p
 {
 	line-height: 18px;
-	/*color: #b1b1b1;*/
 }
