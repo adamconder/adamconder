@@ -8,16 +8,6 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 
-* { 
-	/*font-family: 'uniman';*/
-	font-family: 'Roboto', sans-serif;
-	font-weight: 100;
-	text-rendering: optimizeLegibility; 
- 	-webkit-text-size-adjust: 100%; 
-	-ms-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
- }
-
 html, body { height: 100%; }
 
 ::-moz-selection { background: #c0757b; color: #ffffff; text-shadow: none; }
@@ -28,25 +18,11 @@ Stylesheet for adamconder.com
 Author: Adam Conder
 */
 
-/* -----
-    @font-face Definitions
------ */
-
-/*@font-face {
-    font-family: 'uniman';
-    src: url('../fonts/uniman-webfont.eot');
-    src: url('../fonts/uniman-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/uniman-webfont.woff') format('woff'),
-         url('../fonts/uniman-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}*/
-
 /*
 Fonts and titles
 */
 
-/*h1, h2, h3, h4 { font-weight: 300; }*/
+h1, h2, h3, h4, h5, h6 { font-weight: 300; }
 
 h1 { font-size: 34px; }
 h2 { font-size: 28px; }
@@ -64,19 +40,30 @@ a:hover, a:visited, a:active {
 	text-decoration: none;
 }
 
+/*
+	Main content
+*/
+
 body {
 	background: #f2f2f2;
-	font-weight: normal;
 	text-align: left;
 	font-size: 16px;
-	letter-spacing: 1px;
 	color: #5b5b5b;
 	padding: 0;
 	margin: 0;
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	text-rendering: optimizeLegibility; 
+ 	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
 }
 
 
-/*header*/
+/*******
+	header
+	********/
 
 header {
 	width:100%;
@@ -98,6 +85,49 @@ header > section#logo a {
     text-indent: -999999em;
     width: 130px;
     text-align: center;
+}
+
+/*
+	Freelance availability
+*/
+
+span.freelance
+{
+	display: block;
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	border: 1px solid;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 12px;
+	text-align: center;
+}
+
+@media only screen and (max-width : 568px) {
+	/*iphone in landscape or portrait*/
+	span.freelance
+	{
+		position: relative;	
+		top: 0;
+		left: 0;
+		width: 60%;
+		margin: 0 auto;
+	}
+}
+
+span.available 
+{
+	border-color: #a2c224;
+	color: #a2c224;
+}
+
+span.unavailable
+{
+	border-color: #d09498;
+	color: #d09498;
 }
 
 /*
@@ -319,7 +349,6 @@ div.project > div.project-information > div.project-tags > span
 	padding: 5px 10px;
 	color: #c0757b;
 	background-color: transparent;
-	font-size: 12px;
 	text-transform: lowercase;
 	border: 1px solid #c0757b;
 	-webkit-border-radius: 5px;
@@ -514,7 +543,6 @@ article.post div.post-information > div.post-date span.post-keyword a
 	margin-bottom: 10px;
 	padding: 5px 10px;
 	color: #c0757b;
-	font-size: 12px;
 	background-color: transparent;
 	border: 1px solid #c0757b;
 	-webkit-border-radius: 5px;
@@ -597,7 +625,6 @@ article.post > div.post-links a
 	margin-bottom: 20px;
 	padding: 5px 10px;
 	background-color: transparent;
-	font-size: 12px;
 	text-transform: lowercase;
 	border: 1px solid #c0757b;
 	-webkit-border-radius: 5px;
@@ -684,6 +711,13 @@ form input
 	height: 30px;
 }
 
+form input:focus, form textarea:focus
+{
+	background-color: #ffffff;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
 form input, form textarea 
 {
 	-webkit-border-radius: 5px;
@@ -709,7 +743,6 @@ form > div.form_submit > input, form > span.contact-button > input, form input[t
 	padding: 10px 10px;
 	background-color: transparent;
 	color: #c0757b;
-	font-size: 12px;
 	text-transform: lowercase;
 	border: 1px solid #c0757b;
 	outline: none;
@@ -756,7 +789,7 @@ form select
 	form > div.form_submit > input, form > span.contact-button > input, form input[type="file"]
 	{
 		width:	100%;
-		margin-right: none;
+		padding: 10px 0 10px 0;
 	}
 
 	form select
@@ -802,7 +835,6 @@ div.comment > div.details > div.name > a, div.comment > div.details p
 
 div.comment > div.details > div.date p
 {
-	font-size: 12px;
 	font-style: italic;
 }
 
