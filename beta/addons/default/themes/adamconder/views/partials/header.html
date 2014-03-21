@@ -39,6 +39,7 @@
   	{{ theme:js file="libs/modernizr.js" }}
   	{{ theme:js file="libs/jquery.js" }}
   	{{# theme:js file="highlight.js/src/highlight.js" #}}
+  	{{ theme:js file="script.js" }}
 
 	{{ template:metadata }}
 	
@@ -48,19 +49,21 @@
 
 <body class="{{ url:segments segment="1" default="home" }}">
 	
-	<!-- container -->
-	<div class="container">	
-
 		<header>
 			<section id="logo">
 				<a href="{{ url:base }}" title="adamconder">
 					<h1>{{ settings:site_name }}</h1>
 				</a>
 			</section>
-		</header>
 
+			
 			<nav id="primary">
 				<ul>
 					{{ navigation:links group="header" }}
 				</ul>
 			</nav>
+			<div class="clearFix"></div>
+		</header>
+
+	<!-- container -->
+	<div class="container">

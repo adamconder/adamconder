@@ -1,5 +1,5 @@
-<?php if ($comments): ?>
-	
+<?php /* if ($comments):  */?>
+	<?php /*
 	<?php foreach ($comments as $item): ?>
 		
 		<div class="comment">
@@ -24,7 +24,11 @@
 			<div class="clearFix"></div>
 		</div><!-- close .comment -->
 	<?php endforeach ?>
+
+	*/?>
+
+	{{ disqus:show shortname="adamconder" }}
 	
-<?php else: ?>
+<?php /* else: ?>
 	<p><?php echo lang('comments:no_comments') ?></p>
-<?php endif ?>
+<?php endif */?>

@@ -1,12 +1,12 @@
 {{ theme:partial name="header" }}
 	
-	{{ if page:freelance_availability }}
+	{{# if page:freelance_availability }}
 		{{ if { page:freelance_availability } == yes }}
 			<a href="./contact"><span class="freelance available">Accepting Projects</span></a>
 		{{ else }}
 			<a href="./contact"><span class="freelance unavailable">Unavailable for Projects</span></a>
 		{{ endif }}
-	{{ endif }}
+	{{ endif #}}
 
 	<!-- slogan -->
 	{{ if { url:segments segment="1" } == '' AND theme:options:slogan == 'yes' }}

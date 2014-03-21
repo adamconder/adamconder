@@ -68,22 +68,26 @@ body {
 header {
 	width:100%;
 	height: auto;
+	background-color: #fff;
+	border-bottom: 1px solid #e5e2e2;
 }
 
 header > section#logo {
 	width:auto;
 	height:auto;
-	margin:35px auto 35px auto;
 	display: block;
+	float:left;
+	margin: 0 0 0 10%;
+	padding: 0;
 }
 
 header > section#logo a {
     background: url(../img/logo.png) center center no-repeat;
+    background-size: 70%;
     display: block;
-    height: 130px;
-    margin: 25px auto 25px auto;
+    height: 100px;
     text-indent: -999999em;
-    width: 130px;
+    width: 100px;
     text-align: center;
 }
 
@@ -167,8 +171,9 @@ nav#primary
 {
 	width: auto;
 	display: block;
-	margin: 40px auto 0 auto;
-	text-align: center;
+	text-align: right;
+	float: right;
+	margin-right: 10%;
 }
 
 nav#primary ul
@@ -179,8 +184,6 @@ nav#primary ul
 	text-transform: lowercase;
 	margin: 0 auto;
 	display: inline-block;
-	border-bottom: 1px solid #e5e2e2;
-	padding: 0 0 40px 0;
 }
 
 nav#primary ul li
@@ -193,6 +196,18 @@ nav#primary ul li
 nav#primary ul li a
 {
 	text-align: center;
+}
+
+nav#primary ul li a:hover
+{
+	border: 1px solid #c0757b;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 5px 10px;
+
+	-webkit-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
 }
 
 nav#primary ul li:last-child
@@ -324,18 +339,6 @@ div.project div.project-title > p.project-slogan
 }
 
 /* Project description */
-
-div.project > div.project-information > div.project-description > p:first-child, div.project > div.project-information > div.project-responsibility > p:first-child
-{
-	font-style: italic;
-	/*color: #8d8d8d;*/
-}
-
-/*div.project > div.project-information p
-{
-	font-size: 14px;
-	color: #b1b1b1;
-}*/
 
 /* Project Responsibility */
 
@@ -509,17 +512,16 @@ article.post div.post-information > div.post-date
 	/*iphone in landscape or portrait*/
 	article.post div.post-information > div.post-title
 	{
-		float: none;
-		width: 100%;
-		margin: -5% 10% 0 1%;
+		float: left;
+		width: 50%;
+		margin: -5% 0 0 1%;
 	}
 
 	article.post div.post-information > div.post-date
 	{
-		float: none;
-		width: 100%;
-		text-align: left;
-		margin: 10% 1% 1% 1%;
+		float: left;
+		width: 48%;
+		margin: 0 0 1% 1%;
 	}
 }
 
@@ -530,8 +532,6 @@ article.post div.post-information > div.post-date p
 
 article.post div.post-information > div.post-title > p.post-slogan
 {
-	/*font-size: 14px;*/
-	line-height: 6px;
 	margin-top: -32px;
 	text-transform: lowercase;
 }
@@ -575,7 +575,6 @@ article.post > div.post-featured-image > img
 {
 	width: 100%;
 	height: auto;
-	max-height: 400px;
 	display: block;
 	clear: both;
 	-webkit-border-radius: 5px;
@@ -613,9 +612,25 @@ article.post > div.post_intro > img, article.post > div.post_body > img
 
 article.post > div.post_intro, article.post > div.post_body
 {
-	/*font-size: 14px;*/
-	/*color: #b1b1b1;*/
 	margin: 25px 0 25px 0;
+}
+
+article.post > div.post_body p
+{
+	margin: 0 0 10px 0 !important;
+}
+
+article.post > div.post_body img
+{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+article.post > div.post_body > ul li
+{
+	margin: 0 !important;
+	font-family: 'Roboto', sans-serif !important;
 }
 
 article.post > div.post-links a
@@ -648,6 +663,19 @@ article.post > div.post-links a:hover
 		text-align: center;
 		display: block;
 	}
+
+	article.post > div.post_body img
+	{
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	article.post > div.post_body iframe
+	{
+		width: 100% !important;
+		height: auto !important;
+	}
+
 }
 
 blockquote
@@ -735,7 +763,7 @@ form span.required
 	/*text-indent: 20px;*/
 }
 
-form > div.form_submit > input, form > span.contact-button > input, form input[type="file"], form select
+form input, form input[type="file"], form select
 {
 	display: inline-block;
 	margin-right: 10px;

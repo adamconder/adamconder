@@ -1,4 +1,4 @@
-<?php echo form_open("comments/create/{$module}", 'id="create-comment"') ?>
+<?php /* echo form_open("comments/create/{$module}", 'id="create-comment"') ?>
 
 	<noscript><?php echo form_input('d0ntf1llth1s1n', '', 'style="display:none"') ?></noscript>
 
@@ -34,4 +34,6 @@
 		<?php echo form_submit('submit', lang('comments:send_label')) ?>
 	</div>
 
-<?php echo form_close() ?>
+<?php echo form_close() */?>
+
+{{ disqus:show shortname="adamconder" }}
