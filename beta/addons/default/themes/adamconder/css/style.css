@@ -73,11 +73,10 @@ header {
 }
 
 header > section#logo {
-	width:auto;
+	width:30%;
 	height:auto;
 	display: block;
 	float:left;
-	margin: 0 0 0 10%;
 	padding: 0;
 }
 
@@ -89,6 +88,19 @@ header > section#logo a {
     text-indent: -999999em;
     width: 100px;
     text-align: center;
+    margin:0 auto;
+
+	-webkit-animation: fade-in 1000ms ease-out;
+	animation: fade-in 1000ms ease-out;
+	-webkit-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+
+header >section#logo a:hover
+{
+	background-size: 80%;
+	-webkit-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
 }
 
 /*
@@ -169,11 +181,13 @@ span.unavailable
 
 nav#primary
 {
-	width: auto;
+	width: 70%;
+	height: auto;
 	display: block;
 	text-align: right;
 	float: right;
-	margin-right: 10%;
+	margin: 0;
+	padding: 0;
 }
 
 nav#primary ul
@@ -182,20 +196,27 @@ nav#primary ul
 	font-size: 24px;
 	text-align: center;
 	text-transform: lowercase;
-	margin: 0 auto;
 	display: inline-block;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
 }
 
 nav#primary ul li
 {
 	display: inline-block;
-	margin: 0 60px 0 0;
 	text-align: center;
+	margin: 0 2% 0 2%;
+	line-height: 150px;
 }
 
 nav#primary ul li a
 {
 	text-align: center;
+	-webkit-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+
+	padding: 5px 10px;
 }
 
 nav#primary ul li a:hover
@@ -204,7 +225,7 @@ nav#primary ul li a:hover
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	padding: 5px 10px;
+	padding: 5px 15px;
 
 	-webkit-transition: all 300ms ease-out;
 	transition: all 300ms ease-out;
@@ -218,7 +239,7 @@ nav#primary ul li:last-child
 
 @media only screen and (max-width : 568px) {
 	/*iphone in landscape or portrait*/
-	nav#primary ul
+	n/*av#primary ul
 	{
 		display: block;
 		width: 80%;
@@ -228,7 +249,7 @@ nav#primary ul li:last-child
 	{
 		display: block;
 		margin: 0 0 10px 0;
-	}
+	}*/
 }
 
 /* -----
@@ -284,29 +305,22 @@ section#projects-container > h4
 section#projects-container div.project
 {
 	border-bottom: 1px solid #e5e2e2;
-	border-top: 1px solid #e5e2e2;
+	border-left: 2px solid #d09498;
 	height: auto;
 	min-height: 350px;
 	display: block;
 	clear: both;
 	position: relative;
 	margin-bottom: 50px;
-}
 
-/*section#projects-container div.project:last-child
-{
-	margin-bottom: 50px;
-}*/
+	background: #fff;
+	border-radius: 5px;
+	padding: 0 20px 0 20px;
+}
 
 /* -----
     Individual Projects
 ----- */
-/*
-div.project > div.project-title, div.project-description, div.project-responsibility div.project-tags
-{
-	float: left;
-	clear: both;
-}*/
 
 div.project > div.project-information
 {
@@ -332,7 +346,6 @@ div.project div.project-title > h4
 /* Project slogan */
 div.project div.project-title > p.project-slogan
 {
-	/*font-size: 14px;*/
 	line-height: 14px;
 	margin-top: -32px;
 	text-transform: lowercase;
@@ -395,7 +408,7 @@ div.project > div.project-image-container > div.project-image
 	Project image media queries
 */
 
-@media only screen and (max-width : 568px) {
+@media only screen and (max-width : 800px) {
 	/*iphone in landscape or portrait*/
 
 	div.project > div.project-image-container
@@ -416,6 +429,7 @@ div.project > div.project-image-container > div.project-image
 	{
 		float: none;
 		width: 100%;
+		margin: 10px 0 0 0;
 	}
 }
 
