@@ -409,6 +409,18 @@ div.project > div.project-image-container > div.project-image
 	bottom: 0;
 }
 
+/*div.project > div.project-image-container > div.project-image:hover 
+{
+	 -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}*/
+
 /*
 	Project image media queries
 */
@@ -747,6 +759,48 @@ body.contact section#content > article.page
 	padding: 10px 0 10px 0;
 }
 
+body.contact form 
+{
+	float: left;
+	width: 60%;
+}
+
+body.contact div.contact-social
+{
+	width: 40%;
+	float: left;
+}
+
+body.contact div.contact-social ul { list-style: none; }
+
+body.contact div.contact-social ul li 
+{
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin: 0 10px 10px 0;
+	background-color: #ffffff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+	text-indent: -9999px;
+}
+
+body.contact div.contact-social ul li:hover 
+{
+	-webkit-animation: fade-in 1000ms ease-out;
+	animation: fade-in 1000ms ease-out;
+	-webkit-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
+
+
+body.contact div.contact-social ul li.twitter {background: rgb(22, 169, 235) url(../img/contact/twitter.png) no-repeat center center; background-size: 50%; }
+body.contact div.contact-social ul li.linkedin { background: rgb(31, 127, 185) url(../img/contact/linkedin.jpg) no-repeat center center; background-size: 100%; }
+body.contact div.contact-social ul li.github { background: rgb(255, 255, 255) url(../img/contact/github.png) no-repeat center center; background-size: 80%; }
+
+
 form label, form textarea, form select
 {
 	display: block;
@@ -776,7 +830,7 @@ form input, form textarea
 {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	border-radius: 5px;]
+	border-radius: 5px;
 }
 
 form input[type="file"]
