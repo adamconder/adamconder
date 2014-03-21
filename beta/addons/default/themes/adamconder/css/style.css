@@ -794,7 +794,19 @@ body.contact div.contact-social ul li:hover
 	-webkit-transition: all 300ms ease-out;
 	transition: all 300ms ease-out;
 }
-
+body.contact div.contact-social ul li a
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+body.contact div.contact-social ul li a:hover 
+{
+	-webkit-animation: fade-in 1000ms ease-out;
+	animation: fade-in 1000ms ease-out;
+	-webkit-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
+}
 
 body.contact div.contact-social ul li.twitter {background: rgb(22, 169, 235) url(../img/contact/twitter.png) no-repeat center center; background-size: 50%; }
 body.contact div.contact-social ul li.linkedin { background: rgb(31, 127, 185) url(../img/contact/linkedin.jpg) no-repeat center center; background-size: 100%; }

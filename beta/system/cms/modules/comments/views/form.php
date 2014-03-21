@@ -1,39 +1,17 @@
-<?php /* echo form_open("comments/create/{$module}", 'id="create-comment"') ?>
+{{# disqus:show shortname="adamconder" #}}
 
-	<noscript><?php echo form_input('d0ntf1llth1s1n', '', 'style="display:none"') ?></noscript>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'adamconder'; // required: replace example with your forum shortname
 
-	<h4><?php echo lang('comments:your_comment') ?></h4>
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
-	<?php echo form_hidden('entry', $entry_hash) ?>
-
-	<?php if ( ! is_logged_in()): ?>
-
-	<div class="form_name">
-		<label for="name"><?php echo lang('comments:name_label') ?><span class="required">*</span></label>
-		<input type="text" name="name" id="name" maxlength="40" value="<?php echo $comment['name'] ?>" />
-	</div>
-
-	<div class="form_email">
-		<label for="email"><?php echo lang('global:email') ?><span class="required">*</span></label>
-		<input type="text" name="email" maxlength="40" value="<?php echo $comment['email'] ?>" />
-	</div>
-
-	<div class="form_url">
-		<label for="website"><?php echo lang('comments:website_label') ?></label>
-		<input type="text" name="website" maxlength="40" value="<?php echo $comment['website'] ?>" />
-	</div>
-
-	<?php endif ?>
-
-	<div class="form_textarea">
-		<label for="comment"><?php echo lang('comments:message_label') ?><span class="required">*</span></label>
-		<textarea name="comment" id="comment" rows="5" cols="30" class="width-full"><?php echo $comment['comment'] ?></textarea>
-	</div>
-
-	<div class="form_submit">
-		<?php echo form_submit('submit', lang('comments:send_label')) ?>
-	</div>
-
-<?php echo form_close() */?>
-
-{{ disqus:show shortname="adamconder" }}

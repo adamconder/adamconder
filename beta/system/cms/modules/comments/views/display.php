@@ -1,34 +1,17 @@
-<?php /* if ($comments):  */?>
-	<?php /*
-	<?php foreach ($comments as $item): ?>
-		
-		<div class="comment">
-			<div class="image">
-				<?php echo gravatar($item->user_email, 60) ?>
-			</div>
-			<div class="details">
-				<div class="name">
-					<?php echo $item->user_name ?>
-				</div>
-				<div class="date">
-					<p><?php echo format_date($item->created_on) ?></p>
-				</div>
-				<div class="content">
-					<?php if (Settings::get('comment_markdown') and $item->parsed): ?>
-						<?php echo $item->parsed ?>
-					<?php else: ?>
-						<p><?php echo nl2br($item->comment) ?></p>
-					<?php endif ?>
-				</div>
-			</div>
-			<div class="clearFix"></div>
-		</div><!-- close .comment -->
-	<?php endforeach ?>
+{{# disqus:show shortname="adamconder" #}}
 
-	*/?>
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'adamconder'; // required: replace example with your forum shortname
 
-	{{ disqus:show shortname="adamconder" }}
-	
-<?php /* else: ?>
-	<p><?php echo lang('comments:no_comments') ?></p>
-<?php endif */?>
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
