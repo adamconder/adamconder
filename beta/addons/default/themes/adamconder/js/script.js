@@ -4,7 +4,9 @@
 
 $(function() {
 	$('input[name="email"]').attr('placeholder','email address');
-	$('input[name="email"]').attr('placeholder','email address');
+	$('textarea[name="message"]').attr('placeholder','message');
+
+	$("textarea").parents('div').css("clear", "both");
 });
 
 // Slider

@@ -159,6 +159,11 @@ span.unavailable
 		width: 80%;
 		margin: 0 auto;
 	}
+
+	body.contact > div.container
+	{
+		width: 100%;
+	}
 }
 
 
@@ -721,31 +726,38 @@ div#existing-comments > h4
 
 /* -----
 
-    Forms
+    Contact and Forms
 
 ----- */
+
+body.contact section#content
+{
+	width: 100%;
+	background: url(../img/contact/contact-map.png) no-repeat top center;
+	background-size: 200%;
+	-webkit-animation: fade-in 1000ms ease-out;
+	animation: fade-in 1000ms ease-out;
+	border-bottom: 1px solid #e5e2e2;
+}
+
+body.contact section#content > article.page 
+{
+	width: 80%;
+	margin:0 auto;
+	padding: 10px 0 10px 0;
+}
 
 form label, form textarea, form select
 {
 	display: block;
 	clear: both;
+	resize: none;
 }
 
 form label
 {
 	font-size: 20px;
 	color: #c0757b;
-}
-
-form textarea, form input, form select
-{
-	border: 1px solid #c0757b;
-	outline-style: none;
-	padding: 5px;
-	font-size: 14px;
-	width: 100%;
-	margin: 20px 0 20px 0;
-	background-color: transparent;
 }
 
 form input 
@@ -764,7 +776,7 @@ form input, form textarea
 {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	border-radius: 5px;
+	border-radius: 5px;]
 }
 
 form input[type="file"]
@@ -772,27 +784,29 @@ form input[type="file"]
 	height: auto;
 }
 
-form span.required
-{
-	/*text-indent: 20px;*/
-}
-
-form input, form input[type="file"], form select
+form input, form input[type="file"], form select, form textarea
 {
 	display: inline-block;
 	margin-right: 10px;
 	margin-bottom: 10px;
 	padding: 10px 10px;
-	background-color: transparent;
-	color: #c0757b;
+	background-color: #fff;
 	text-transform: lowercase;
-	border: 1px solid #c0757b;
+	border: 1px solid #e5e2e2;
 	outline: none;
 	width: auto;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	height: auto;
+}
+
+input[type="submit"]
+{
+	background-color: #d09498;
+	border: 1px solid #fff;
+	color: #fff;
+	clear: both;
 }
 
 input[type="submit"]:hover
@@ -807,19 +821,24 @@ input[type="submit"]:hover
 form select 
 {
 	background-image: url(../img/downarrow.png);
-	background-position: right 5px center;
+	background-color: #d09498;
+	background-position: right 15px center;
 	background-repeat: no-repeat;
 	background-size: 10px;
 	-webkit-appearance: none;
-	background-color: transparent;
+	width: 160px;
+	color: #fff;
 }
 
-@media only screen and (min-width : 568px) {
-	/*iphone in landscape or portrait*/
-	form
-	{
-		width: 50%;
-	}
+form.contact-form div
+{
+	float: left;
+}
+
+form span.contact-button
+{
+	clear: both;
+	display: block;
 }
 
 @media only screen and (max-width: 568px ) {
