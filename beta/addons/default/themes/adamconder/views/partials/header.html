@@ -41,8 +41,6 @@
   	{{# theme:js file="highlight.js/src/highlight.js" #}}
   	{{ theme:js file="script.js" }}
 
-  	<script type="text/javascript" async="" src="http://adamconder.disqus.com/embed.js"></script>
-
 	{{ template:metadata }}
 	
 	<!-- Google Analytics -->
@@ -59,11 +57,15 @@
 			</section>
 
 			
-			<nav id="primary">
-				<ul>
-					{{ navigation:links group="header" }}
-				</ul>
-			</nav>
+			<div id="nav-wrapper">
+				<div id="nav-cell">
+					<nav id="primary">
+						<ul>
+							{{ navigation:links group="header" }}
+						</ul>
+					</nav>
+				</div>
+			</div>
 			<div class="clearFix"></div>
 		</header>
 

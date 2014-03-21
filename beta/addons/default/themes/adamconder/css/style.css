@@ -244,17 +244,33 @@ nav#primary ul li:last-child
 
 @media only screen and (max-width : 568px) {
 	/*iphone in landscape or portrait*/
-	n/*av#primary ul
+
+	header > section#logo
 	{
-		display: block;
-		width: 80%;
+		width: 100%;
 	}
 
 	nav#primary ul li
 	{
 		display: block;
-		margin: 0 0 10px 0;
-	}*/
+		line-height: 40px;
+		margin: 0;
+		width: 100%;
+	}
+
+	nav#primary ul
+	{
+		width:100%;
+		padding: 0;
+		margin: 0 0 20px 0;
+	}
+
+	nav#primary
+	{
+		width: 100%;
+		float: none;
+		clear: both;
+	}
 }
 
 /* -----
@@ -908,20 +924,36 @@ form span.contact-button
 }
 
 @media only screen and (max-width: 568px ) {
-	form
-	{
-		width: 100%;
-	}
 
-	form > div.form_submit > input, form > span.contact-button > input, form input[type="file"]
+	body.contact form div.form_submit input, body.contact form span.contact-button input, form input[type="file"]
 	{
 		width:	100%;
 		padding: 10px 0 10px 0;
 	}
 
-	form select
+	body.contact form select
 	{
 		width: 100%;
+	}
+
+	body.contact div.contact-social, body.contact div.contact-social ul
+	{
+		clear: both;
+		float: none;
+		width: 100%;
+		margin:0;
+		padding:0;
+	}
+
+	body.contact form
+	{
+		width: 100%;
+	}
+
+	body.contact div.contact-social ul li
+	{
+		width: 100px;
+		height: 100px;
 	}
 }
 
