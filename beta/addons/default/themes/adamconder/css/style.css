@@ -817,6 +817,8 @@ body.contact form
 	margin: 0 5% 0 0;
 }
 
+body.contact div.error { margin: 20px 0; color: #d09498; font-weight: 400; }
+
 body.contact h2 { margin: 40px 0; }
 
 body.contact div.contact-social
