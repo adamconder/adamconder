@@ -45,6 +45,22 @@
 	
 	<!-- Google Analytics -->
 	{{ integration:analytics }}
+
+	<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9Nm7j9ELW7gG99fKwQvXR3cRByk6-KJ8&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(54.983960, -1.614653),
+          zoom: 12
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
 </head>
 
 <body class="{{ url:segments segment="1" default="home" }}">
