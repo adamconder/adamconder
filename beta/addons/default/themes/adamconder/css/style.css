@@ -514,7 +514,7 @@ section#blog-blurb
 section#blog-blurb h3
 {
 	text-align: center;
-	line-height: 300%;
+	line-height: 150px;
 	font-weight: 300;
 	font-style: italic;
 }
@@ -796,10 +796,16 @@ body.contact section#content > article.page
 	padding: 10px 0 10px 0;
 }
 
+body.contact input, body.contact select
+{
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+}
 body.contact form 
 {
 	float: left;
-	width: 60%;
+	width: 55%;
+	margin: 0 5% 0 0;
 }
 
 body.contact div.contact-social
@@ -875,10 +881,28 @@ form input:focus, form textarea:focus
 	transition: all 0.5s ease;
 }
 
+input[type="button"], input[type="submit"], 
+input[type="reset"], input[type="file"]::-webkit-file-upload-button, 
+button {
+   -webkit-box-align: center;
+   text-align: center;
+   cursor: default;
+   color: buttontext;
+	padding: 10px 10px;
+	border: 1px solid #e5e2e2;
+   border-image: initial;
+   background-color: buttonface;
+   box-sizing: border-box;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+   -webkit-appearance: push-button;
+   white-space: pre;
+}
+
 form input, form input[type="file"], form select, form textarea
 {
 	display: inline-block;
-	margin-right: 10px;
 	margin-bottom: 10px;
 	padding: 10px 10px;
 	background-color: #fff;
@@ -890,14 +914,6 @@ form input, form input[type="file"], form select, form textarea
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	height: auto;
-}
-
-form textarea
-{
-	width: 100%;
-	height: auto;
-	margin-right: 0;
-	display: block;
 }
 
 input[type="submit"]
@@ -916,9 +932,20 @@ input[type="submit"]:hover
 	transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-body.contact form input, body.contact form select
+body.contact form input, body.contact form select, body.contact form textarea
 {
-	width: 48%;
+	width: 100%;
+}
+
+
+body.contact form input, body.contact form textarea
+{
+	width: 96%;
+}
+
+body.contact form input[type="submit"]
+{
+	width: auto;
 }
 
 form select 
@@ -938,12 +965,12 @@ form span.contact-button
 	display: block;
 }
 
-@media only screen and (max-width: 568px ) {
+body.contact div.contact-social ul
+{
+	margin: 0;
+}
 
-/*	body.contact form div.form_submit input, body.contact form span.contact-button input, form input[type="file"]
-	{
-		padding: 10px 0 10px 0;
-	}*/
+@media only screen and (max-width: 568px ) {
 
 	body.contact div.contact-social, body.contact div.contact-social ul
 	{
@@ -955,6 +982,11 @@ form span.contact-button
 	}
 
 	body.contact form
+	{
+		width: 100%;
+	}
+
+	body.contact form input[type="submit"]
 	{
 		width: 100%;
 	}
