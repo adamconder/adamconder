@@ -10,7 +10,24 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 
-html, body { height: 100%; }
+html { font-size: 100%; }
+
+html, body { 
+	height: 100%; 
+	background: #f2f2f2;
+	text-align: left;
+	font-size: 16px; font-size: 1.0em; /* converts to 16px */
+	color: #5b5b5b;
+	padding: 0;
+	margin: 0;
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	text-rendering: optimizeLegibility; 
+ 	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+}
 
 ::-moz-selection { background: #c0757b; color: #ffffff; text-shadow: none; }
 ::selection { color: #ffffff; text-shadow: none; background-color: #c0757b; }
@@ -26,14 +43,15 @@ Fonts and titles
 
 h1, h2, h3, h4, h5, h6 { font-weight: 300; margin: 0 0 10px 0; }
 
-h1 { font-size: 34px; }
-h2 { font-size: 28px; }
-h3 { font-size: 24px; }
-h4 { font-size: 22px; color: #c0757b; }
-h5 { font-size: 20px; color: #c0757b; }
+h1 { font-size: 34px; font-size: 3.4em; }
+h2 { font-size: 28px; font-size: 2.0em; }
+h3 { font-size: 24px; font-size: 1.6em; }
+h4 { font-size: 22px; font-size: 1.6em; color: #c0757b; }
+h5 { font-size: 20px; font-size: 1.2em; color: #c0757b; }
 
-p { margin: 0 0 10px 0; line-height: 22px; }
-
+p { margin: 0 0 1em 0; line-height: 1.3em; font-size: 16px; font-size: 1em; }
+p[style] { margin: 0 0 1em 0 !important; line-height: 1.3em !important; font-size: 16px!important; font-size: 1em !important; font-family: 'Roboto', sans-serif!important; }
+blockquote { font-size: 24px; font-size: 1.5em; text-align: center; font-weight: 300; font-style: italic; }
 ul { margin: 10px 0 10px 0; list-style: disc; list-style-position: inside; }
 ul li { margin: 0 0 5px 0; }
 
@@ -52,25 +70,8 @@ a:hover, a:visited, a:active {
 	Main content
 */
 
-body {
-	background: #f2f2f2;
-	text-align: left;
-	font-size: 16px;
-	color: #5b5b5b;
-	padding: 0;
-	margin: 0;
-
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	text-rendering: optimizeLegibility; 
- 	-webkit-text-size-adjust: 100%; 
-	-ms-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
-}
-
-
 /*******
-	header
+	Header
 	********/
 
 header {
@@ -126,7 +127,6 @@ span.freelance
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 	padding: 10px;
-	font-size: 12px;
 	text-align: center;
 }
 
@@ -206,7 +206,7 @@ nav#primary
 nav#primary ul
 {
 	list-style: none;
-	font-size: 24px;
+	font-size: 16px; font-size: 1.6em;
 	text-align: center;
 	text-transform: lowercase;
 	display: inline-block;
@@ -229,7 +229,7 @@ nav#primary ul li a
 	-webkit-transition: all 300ms ease-out;
 	transition: all 300ms ease-out;
 
-	padding: 5px 10px;
+	padding: 1% 5%;
 }
 
 nav#primary ul li a:hover
@@ -285,19 +285,19 @@ nav#primary ul li:last-child
     Content headers
 ----- */
 
-section#portfolio-blurb
+section#portfolio-blurb, section#blog-blurb
 {
 	border-bottom: 1px solid #e5e2e2;
-	height: auto;
+	min-height: 10em;
 	display: block;
 }
 
-section#portfolio-blurb h3
+section#portfolio-blurb h3, section#blog-blurb h3
 {
 	text-align: center;
-	line-height: 150px;
 	font-weight: 300;
 	font-style: italic;
+	padding: 2.5em 0 2.5em 0;
 }
 
 /* -----
@@ -365,25 +365,11 @@ div.project > div.project-information > div.project-title
 	margin: 10px 0;
 }
 
-div.project > div.project-information > div.project-title p
-{
-	margin: 0;
-}
-
-div.project div.project-title > h4 
-{
-	font-size: 30px;
-}
-
 /* Project slogan */
 div.project div.project-title > p.project-slogan
 {
 	text-transform: lowercase;
 }
-
-/* Project description */
-
-/* Project Responsibility */
 
 /* Project Tags */
 div.project > div.project-information > div.project-tags
@@ -495,34 +481,6 @@ div.project > div.project-image-container > div.project-image img.top:hover
 
 ----- */
 
-/*
-	Media queries for blog blurbs
-	*/
-
-section#blog-blurb
-{
-	border-bottom: 1px solid #e5e2e2;
-	height: auto;
-	display: block;
-}
-
-section#blog-blurb h3
-{
-	text-align: center;
-	line-height: 150px;
-	font-weight: 300;
-	font-style: italic;
-}
-
-
-@media only screen and (max-width : 568px) {
-	/*iphone in landscape or portrait*/
-	section#portfolio-blurb h3, section#blog-blurb h3
-	{
-		line-height: 50px;
-	}
-}
-
 /* -----
 
     Blog
@@ -536,20 +494,17 @@ body.blog > div.container > section#content > h4
 	padding-top: 20px;
 }
 
-article.post div.post-information > div.post-title > h4
-{
-	font-size: 30px;
-}
-
 article.post
 {
 	border-bottom: 1px solid #e5e2e2;
-	/*border-top: 1px solid #e5e2e2;*/
 	height: auto;
 	display: block;
 	clear: both;
 	position: relative;
 }
+
+article.post { font-family: 'Roboto', sans-serif;
+font-weight: 300; font-size: 16px !important; font-size: 1.0em !important; }
 
 article.post:last-child
 {
@@ -669,12 +624,6 @@ article.post > div.post_intro > img, article.post > div.post_body > img
 article.post > div.post_intro, article.post > div.post_body
 {
 	margin: 25px 0 25px 0;
-	line-height: 22px;
-}
-
-article.post > div.post_body p
-{
-	margin: 0 0 10px 0 !important;
 }
 
 article.post > div.post_body img
@@ -735,14 +684,6 @@ article.post > div.post-links a:hover
 
 }
 
-blockquote
-{
-	font-size: 30px;
-	text-align: center;
-	font-weight: 300;
-	font-style: italic;
-}
-
 /* -----
 
     Blog Detail
@@ -796,7 +737,6 @@ body.contact section#content > article.page
 
 body.contact input, body.contact select
 {
-	font-size: 16px;
 	font-family: 'Roboto', sans-serif;
 }
 body.contact form 
@@ -867,7 +807,6 @@ form label, form textarea, form select
 
 form label
 {
-	font-size: 20px;
 	color: #c0757b;
 }
 
@@ -936,6 +875,8 @@ input[type="submit"]:hover
 	background-color: #c0757b;
 	color: #ffffff;
 	cursor: pointer;
+	-webkit-transition: all 300ms ease-out;
+	transition: all 300ms ease-out;
 }
 
 body.contact form input, body.contact form select, body.contact form textarea
@@ -1036,17 +977,7 @@ div.comment > div.details
 	float: left;
 }
 
-div.comment > div.details > div.name > a, div.comment > div.details p
-{
-	line-height: 10px;
-}
-
 div.comment > div.details > div.date p
 {
 	font-style: italic;
-}
-
-div.comment > div.details > div.content p
-{
-	line-height: 18px;
 }
