@@ -2,7 +2,7 @@
     Base Adjustments & HTML5 display definitions
 ----- */
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,700,300italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto:700,400,100,100italic,300,700,300italic);
 
 @import url(normalize.css);
 
@@ -298,6 +298,14 @@ section#portfolio-blurb h3, section#blog-blurb h3
 	font-weight: 300;
 	font-style: italic;
 	padding: 2.5em 0 2.5em 0;
+	font-size: 2.5em
+}
+
+@media only screen and (max-width : 568px) {
+	section#portfolio-blurb h3, section#blog-blurb h3
+	{
+		font-size: 2.0em;
+	}
 }
 
 /* -----
@@ -317,6 +325,16 @@ section#content
 /* -----
     Project definitions
 ----- */
+
+.full-width
+{
+	width: 100%;
+}
+
+.half-width
+{
+	width: 50%;
+}
 
 section#projects-container
 {
@@ -352,9 +370,7 @@ section#projects-container div.project
 
 div.project > div.project-information
 {
-	width: 50%;
 	float: left;
-	margin-right: 10%;
 }
 
 /* Project title */
@@ -362,7 +378,7 @@ div.project > div.project-information
 div.project > div.project-information > div.project-title
 {
 	border-bottom: 1px solid #e5e2e2;
-	margin: 10px 0;
+	margin: 1.0em 0;
 }
 
 /* Project slogan */
@@ -408,7 +424,6 @@ div.project > div.project-information > div.project-tags > span:last-child
 /* Project image */
 div.project > div.project-image-container
 {
-	width: 40%;
 	height: auto;
 	float: left;
 }
@@ -441,6 +456,13 @@ div.project > div.project-image-container > div.project-image img
   	-moz-transition: opacity 0.5s ease-in-out;
   	-o-transition: opacity 0.5s ease-in-out;
  	 transition: opacity 0.5s ease-in-out;
+}
+
+
+div.project > div.project-image-container.full-width > div.project-image img
+{
+	left: 0;
+	margin: 0;
 }
 
 div.project > div.project-image-container > div.project-image img.top:hover

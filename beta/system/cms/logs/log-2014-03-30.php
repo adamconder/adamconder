@@ -139,3 +139,37 @@ ERROR - 2014-03-30 16:40:31 --> Plugin method "options" does not exist on class 
 ERROR - 2014-03-30 16:40:34 --> Plugin method "options" does not exist on class "Plugin_Theme".
 ERROR - 2014-03-30 16:40:43 --> Plugin method "options" does not exist on class "Plugin_Theme".
 ERROR - 2014-03-30 16:40:52 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 16:41:43 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 16:43:41 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 16:43:56 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 16:44:04 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 16:44:08 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 16:44:32 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 16:44:36 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 16:44:40 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 16:44:42 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 16:44:46 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 16:45:03 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 16:45:06 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 16:51:07 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 17:05:11 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 17:05:14 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 17:50:15 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 17:50:18 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 17:50:24 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 17:50:27 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 17:50:32 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 17:50:45 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 17:50:48 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 17:50:51 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 17:53:44 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 17:58:30 --> Will go ahead and create the following tables: myseo_options, myseo_filters, myseo_index, myseo_posts_meta
+ERROR - 2014-03-30 17:58:30 --> -- Creating table: myseo_options
+ERROR - 2014-03-30 17:58:30 --> -- Creating table: myseo_filters
+ERROR - 2014-03-30 17:58:30 --> -- Creating table: myseo_index
+ERROR - 2014-03-30 17:58:30 --> -- Creating table: myseo_posts_meta
+ERROR - 2014-03-30 17:58:31 --> All done perfectly!
+ERROR - 2014-03-30 17:59:43 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 17:59:47 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 17:59:51 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-03-30 18:00:23 --> Plugin method "options" does not exist on class "Plugin_Theme".
