@@ -114,9 +114,9 @@ span.freelance
 	top: 5%;
 	right: 5%;
 	border: 1px solid;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 	padding: 10px;
 	font-size: 12px;
 	text-align: center;
@@ -227,9 +227,9 @@ nav#primary ul li a
 nav#primary ul li a:hover
 {
 	border: 1px solid #c0757b;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 	padding: 5px 15px;
 
 	-webkit-transition: all 300ms ease-out;
@@ -319,7 +319,9 @@ section#projects-container div.project
 	margin-bottom: 50px;
 
 	background: #fff;
-	border-radius: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 	padding: 0 20px 0 20px;
 }
 
@@ -576,9 +578,9 @@ article.post div.post-information > div.post-date span.post-keyword a
 	color: #c0757b;
 	background-color: transparent;
 	border: 1px solid #c0757b;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 article.post div.post-information > div.post-date span.post-keyword a:hover
@@ -608,9 +610,9 @@ article.post > div.post-featured-image > img
 	height: auto;
 	display: block;
 	clear: both;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 
 	-webkit-animation: fade-in 600ms ease-out;
 	animation: fade-in 600ms ease-out;
@@ -622,9 +624,9 @@ article.post > div.post_intro > img, article.post > div.post_body > img
 	margin: 0 25px 20px 0;
 	background: #ffffff;
 	padding: 10px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 /*
@@ -653,9 +655,9 @@ article.post > div.post_body p
 
 article.post > div.post_body img
 {
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 article.post > div.post_body > ul li
@@ -673,9 +675,9 @@ article.post > div.post-links a
 	background-color: transparent;
 	text-transform: lowercase;
 	border: 1px solid #c0757b;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 article.post > div.post-links a:hover
@@ -780,9 +782,9 @@ body.contact div.contact-social ul li
 	float: left;
 	margin: 0 10px 10px 0;
 	background-color: #ffffff;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 	text-align: center;
 	text-indent: -9999px;
 }
@@ -828,9 +830,9 @@ form input:focus, form textarea:focus
 
 form input, form textarea 
 {
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 form input[type="file"]
@@ -849,9 +851,9 @@ form input, form input[type="file"], form select, form textarea
 	border: 1px solid #e5e2e2;
 	outline: none;
 	width: auto;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 	height: auto;
 }
 
@@ -933,9 +935,9 @@ div.comment > div.image > img
 	margin: 0 25px 20px 0;
 	background: #ffffff;
 	padding: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
 div.comment > div.details
