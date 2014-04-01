@@ -1,5 +1,5 @@
-a:4:{s:16:"__cache_contents";a:1:{i:0;a:12:{s:2:"id";s:1:"1";s:7:"created";s:19:"2014-02-22 17:27:05";s:7:"updated";s:19:"2014-03-30 16:52:36";s:10:"created_by";s:1:"1";s:14:"ordering_count";s:1:"1";s:10:"subheading";s:52:"Hi, I'm Adam Conder and I develop for mobile and web";s:8:"projects";s:4018:"<div class="project">
-<div class="project-information half-width">
+a:4:{s:16:"__cache_contents";a:1:{i:0;a:12:{s:2:"id";s:1:"1";s:7:"created";s:19:"2014-02-22 17:27:05";s:7:"updated";s:19:"2014-04-01 21:42:24";s:10:"created_by";s:1:"1";s:14:"ordering_count";s:1:"1";s:10:"subheading";s:52:"Hi, I'm Adam Conder and I develop for mobile and web";s:8:"projects";s:3968:"<div class="project">
+<div class="project-information">
 <div class="project-title">
 <h4>Playlist a Day</h4>
 
@@ -22,14 +22,14 @@ a:4:{s:16:"__cache_contents";a:1:{i:0;a:12:{s:2:"id";s:1:"1";s:7:"created";s:19:
 </div>
 
 <div class="project-image-container half-width">
-<div class="project-image"><img alt="Playlists.net - Player View" class="pyro-image alignment-none bottom" data-pyroimage="true" src="{{ url:site }}files/large/e2adb568e0f5f19" /> <img alt="Playlists.net - Player View" class="pyro-image alignment-none top" data-pyroimage="true" src="{{ url:site }}files/large/6969d47cd0dad9a" /></div>
+<div class="project-image"><img alt="Playlists.net - Player View" class="pyro-image alignment-none" data-pyroimage="true" src="{{ url:site }}files/large/e2adb568e0f5f19" /> <img alt="Playlists.net - Player View" class="pyro-image alignment-none top" data-pyroimage="true" src="{{ url:site }}files/large/6969d47cd0dad9a" /></div>
 </div>
 
 <div class="clearFix">&nbsp;</div>
 </div>
 
 <div class="project">
-<div class="project-information half-width">
+<div class="project-information">
 <div class="project-title">
 <h4>Playlists.net</h4>
 
@@ -59,7 +59,7 @@ a:4:{s:16:"__cache_contents";a:1:{i:0;a:12:{s:2:"id";s:1:"1";s:7:"created";s:19:
 <div class="project-tags"><span>Playlists.net</span><span>Spotify</span><span>iOS</span><span>Foursquare</span></div>
 </div>
 
-<div class="project-image-container half-width">
+<div class="project-image-container">
 <div class="project-image"><img alt="" class="pyro-image alignment-none bottom" data-pyroimage="true" src="{{ url:site }}files/large/9b9bc7b38b8f247" /><img alt="" class="pyro-image alignment-none top" data-pyroimage="true" src="{{ url:site }}files/large/84bf1880036a2a6" />​</div>
 </div>
 
@@ -67,7 +67,7 @@ a:4:{s:16:"__cache_contents";a:1:{i:0;a:12:{s:2:"id";s:1:"1";s:7:"created";s:19:
 </div>
 
 <div class="project">
-<div class="project-information full-width">
+<div class="project-information">
 <div class="project-title">
 <h4>Proudly Carbon Neutral</h4>
 
@@ -87,9 +87,10 @@ a:4:{s:16:"__cache_contents";a:1:{i:0;a:12:{s:2:"id";s:1:"1";s:7:"created";s:19:
 <div class="project-tags"><span>PyroCMS</span><span>HTML</span><span>CSS</span><span>Responsive</span> <span>CMS</span><span>Blog</span></div>
 </div>
 
-<div class="project-image-container full-width">
-<div class="project-image"><img alt="" class="pyro-image alignment-none" data-pyroimage="true" src="{{ url:site }}files/large/b1559ae8c24ae9d" />​</div>
+<div class="project-image-container">
+<div class="project-image"><img alt="" class="pyro-image alignment-none full-width" data-pyroimage="true" src="{{ url:site }}files/large/b1559ae8c24ae9d" />​</div>
 </div>
 
 <div class="clearFix">&nbsp;</div>
-</div>";s:22:"freelance_availability";s:3:"yes";s:19:"created_by||user_id";s:1:"1";s:17:"created_by||email";s:19:"adam@adamconder.com";s:20:"created_by||username";s:10:"adamconder";s:24:"created_by||display_name";s:11:"Adam Conder";}}s:15:"__cache_created";i:1396195183;s:20:"__cache_dependencies";a:0:{}s:15:"__cache_expires";i:1396204183;}
+</div>
+";s:22:"freelance_availability";s:3:"yes";s:19:"created_by||user_id";s:1:"1";s:17:"created_by||email";s:19:"adam@adamconder.com";s:20:"created_by||username";s:10:"adamconder";s:24:"created_by||display_name";s:11:"Adam Conder";}}s:15:"__cache_created";i:1396381855;s:20:"__cache_dependencies";a:0:{}s:15:"__cache_expires";i:1396390855;}
