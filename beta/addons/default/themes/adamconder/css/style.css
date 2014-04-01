@@ -843,6 +843,13 @@ button {
 	border: 1px solid #e5e2e2;
 }
 
+form input, form textarea 
+{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
 input[type="button"], input[type="submit"], input[type="reset"] {
    -webkit-appearance: push-button;
    white-space: pre;
