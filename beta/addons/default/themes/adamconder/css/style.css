@@ -452,7 +452,7 @@ div.project > div.project-image-container > div.project-image img
 div.project > div.project-image-container > div.project-image img.full-width
 {
 	max-width: none;
-	width: auto;
+	width: 100%;
 	max-height: 500px;
 	margin: 0 auto 1em auto;
 }
