@@ -418,6 +418,7 @@ div.project > div.project-image-container
 {
 	height: auto;
 	float: none;
+	clear:both;
 }
 
 div.project > div.project-image-container > div.project-image 
