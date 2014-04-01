@@ -454,7 +454,7 @@ div.project > div.project-image-container > div.project-image img.full-width
 	max-width: none;
 	width: auto;
 	max-height: 500px;
-	margin: 0 auto;
+	margin: 0 auto 1em auto;
 }
 
 /*
@@ -468,7 +468,7 @@ div.project > div.project-image-container > div.project-image img.full-width
 	{
 		width: 100%;
 	}
-	
+
 	div.project > div.project-information
 	{
 		float: none;
