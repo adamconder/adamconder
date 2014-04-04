@@ -626,7 +626,7 @@ article.post > div.post-featured-image > img
 article.post > div.post_intro > img, article.post > div.post_body > img
 {
 	float: left;
-	margin: 1em;
+	margin: 0 1em 1em 0;
 	background: #ffffff;
 	padding: 10px;
 	-webkit-border-radius: 3px;
@@ -791,7 +791,7 @@ body.contact div.contact-social ul li
 	float: right;
 	margin: 0 10px 10px 10px;
 	background-color: #ffffff;
--webkit-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	text-align: center;
@@ -960,7 +960,7 @@ body.contact div.contact-social ul
 		float: none;
 		width: 100%;
 		margin:0;
-		padding:0;
+		padding: 0.5em 0;
 	}
 
 	body.contact div.contact-social ul li 
