@@ -41,7 +41,7 @@ Author: Adam Conder
 Fonts and titles
 */
 
-h1, h2, h3, h4, h5, h6 { font-weight: 300; margin: 0 0 10px 0; }
+h1, h2, h3, h4, h5, h6 { font-weight: 400; margin: 0 0 10px 0; }
 
 h1 { font-size: 34px; font-size: 3.4em; }
 h2 { font-size: 28px; font-size: 2.0em; }
@@ -52,8 +52,12 @@ h5 { font-size: 20px; font-size: 1.2em; color: #D37F84; }
 p { margin: 0 0 1em 0; line-height: 1.3em; font-size: 16px; font-size: 1em; }
 p[style] { margin: 0 0 1em 0 !important; line-height: 1.3em !important; font-size: 16px!important; font-size: 1em !important; font-family: 'Roboto', sans-serif!important; }
 blockquote { font-size: 24px; font-size: 1.5em; text-align: center; font-weight: 300; font-style: italic; }
-ul { margin: 10px 0 10px 0; list-style: disc; list-style-position: inside; }
-ul li { margin: 0 0 5px 0; }
+ul { 
+	margin: 1em; 
+	list-style: circle; 
+	list-style-position: outside;
+	-webkit-padding-start: 0;
+}
 
 /*
 Links and states
@@ -373,6 +377,13 @@ div.project > div.project-information > div.project-title
 	margin: 1.0em 0;
 }
 
+@media only screen and (max-width : 568px) {
+	div.project > div.project-information > div.project-title h4
+	{
+		padding: 0.5em 0 0 0;
+	}
+}
+
 /* Project slogan */
 div.project div.project-title > p.project-slogan
 {
@@ -394,7 +405,7 @@ div.project > div.project-information > div.project-tags > span
 	background-color: transparent;
 	text-transform: lowercase;
 	border: 1px solid #D37F84;
--webkit-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
@@ -436,13 +447,13 @@ div.project > div.project-image-container > div.project-image img
 	float: left;
 	width: auto;
 	height: auto;
-	max-width: 250px;
+	max-width: 45%;
 
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 
-	margin: 0 1em 1em 0;
+	margin: 1em;
 
 	-webkit-transition: opacity 0.5s ease-in-out;
   	-moz-transition: opacity 0.5s ease-in-out;
@@ -454,8 +465,8 @@ div.project > div.project-image-container > div.project-image img.full-width
 {
 	max-width: none;
 	width: 100%;
-	max-height: 500px;
-	margin: 0 auto 1em auto;
+	height: auto;
+	margin: 1em;
 }
 
 /*
@@ -474,6 +485,12 @@ div.project > div.project-image-container > div.project-image img.full-width
 	{
 		float: none;
 		width: 100%;
+	}
+
+	div.project > div.project-image-container > div.project-image img, div.project > div.project-image-container > div.project-image img.full-width
+	{
+		max-width: 100%;
+		margin: 1em 0 1em 0;
 	}
 }
 
@@ -524,7 +541,8 @@ article.post div.post-information > div.post-title
 {
 	float: left;
 	width: auto;
-	margin: 1%;
+	margin: 1em;
+	max-width: 50%;
 }
 
 article.post div.post-information > div.post-date
@@ -532,7 +550,13 @@ article.post div.post-information > div.post-date
 	float: right;
 	width: auto;
 	text-align: right;
-	margin: 1%;
+	margin: 1em;
+	max-width: 40%;
+}
+
+article.post div.post-information > div.post-date p
+{
+	line-height: 0.5em;
 }
 
 @media only screen and (max-width : 568px) {
@@ -542,7 +566,7 @@ article.post div.post-information > div.post-date
 	{
 		float: left;
 		width: 50%;
-		margin: 10px 0 10px 0;
+		margin: 1em 0;
 	}
 }
 
@@ -591,7 +615,7 @@ article.post > div.post-featured-image > img
 	height: auto;
 	display: block;
 	clear: both;
--webkit-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 
@@ -602,10 +626,10 @@ article.post > div.post-featured-image > img
 article.post > div.post_intro > img, article.post > div.post_body > img
 {
 	float: left;
-	margin: 0 25px 20px 0;
+	margin: 1em;
 	background: #ffffff;
 	padding: 10px;
--webkit-border-radius: 3px;
+	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
@@ -615,18 +639,17 @@ article.post > div.post_intro > img, article.post > div.post_body > img
 	*/
 
 @media only screen and (max-width : 568px) {
-	/*iphone in landscape or portrait*/
 	article.post > div.post_intro > img, article.post > div.post_body > img
 	{
 		width: 90%;
 		float: none;
-		margin: 0 0 20px 0;
+		margin: 1em 0;
 	}
 }
 
 article.post > div.post_intro, article.post > div.post_body
 {
-	margin: 25px 0 25px 0;
+	margin: 1em 0;
 }
 
 article.post > div.post_body img

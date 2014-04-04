@@ -19,3 +19,6 @@ ERROR - 2014-04-01 21:50:56 --> Plugin method "options" does not exist on class 
 ERROR - 2014-04-01 21:51:08 --> Plugin method "options" does not exist on class "Plugin_Theme".
 ERROR - 2014-04-01 21:51:19 --> Plugin method "options" does not exist on class "Plugin_Theme".
 ERROR - 2014-04-01 21:51:58 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-04-01 22:56:09 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-04-01 22:56:55 --> Plugin method "options" does not exist on class "Plugin_Theme".
+ERROR - 2014-04-01 22:57:09 --> Plugin method "options" does not exist on class "Plugin_Theme".
