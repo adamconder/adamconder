@@ -605,7 +605,7 @@ article.post div.post-information > div.post-title
 {
 	float: left;
 	width: auto;
-	margin: 1em;
+	margin: 1em 0;
 	max-width: 50%;
 }
 
@@ -614,7 +614,7 @@ article.post div.post-information > div.post-date
 	float: right;
 	width: auto;
 	text-align: right;
-	margin: 1em;
+	margin: 1em 0;
 	max-width: 40%;
 }
 
