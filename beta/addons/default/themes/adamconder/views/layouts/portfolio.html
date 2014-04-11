@@ -17,8 +17,12 @@
 	<section id="content">
 
 		{{ if page:subheading }}
-			<section id="portfolio-blurb">
-			<h3>{{ page:subheading }}</h3>
+			<section id="portfolio-blurb-container">
+				<section id="portfolio-blurb">
+				</section>
+				<section id="portfolio-blurb-content">
+					<h3>{{ page:subheading }}</h3>
+				</section>
 			</section>
 		{{ endif }}
 
