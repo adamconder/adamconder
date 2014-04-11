@@ -80,6 +80,7 @@ ul {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+	text-align: center;
 }
 
 /*
@@ -110,6 +111,7 @@ header {
 	top: 0;
 	left: 0;
 	z-index: 100;
+	background-color: rgba(255,255,255,0.9);
 }
 
 header > section#logo {
@@ -347,9 +349,10 @@ section#portfolio-blurb-content h3, section#blog-blurb h3
 } 
 
 @media only screen and (max-width : 568px) {
-	section#portfolio-blurb h3, section#blog-blurb h3
+	section#portfolio-blurb-content h3, section#blog-blurb h3
 	{
 		font-size: 2.0em;
+		padding: 3em 1em;
 	}
 }
 
@@ -435,6 +438,7 @@ div.project > div.project-information > div.project-title
 .project-organisation
 {
 	width: 20%;
+	margin: 1em 0;
 }
 
 @media only screen and (max-width : 568px) {
