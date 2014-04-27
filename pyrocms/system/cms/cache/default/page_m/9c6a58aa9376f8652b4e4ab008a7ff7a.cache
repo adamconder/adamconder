@@ -1,4 +1,4 @@
-a:4:{s:16:"__cache_contents";a:1:{i:0;a:12:{s:2:"id";s:1:"1";s:7:"created";s:19:"2014-02-22 17:27:05";s:7:"updated";s:19:"2014-04-01 21:42:24";s:10:"created_by";s:1:"1";s:14:"ordering_count";s:1:"1";s:10:"subheading";s:52:"Hi, I'm Adam Conder and I develop for mobile and web";s:8:"projects";s:3968:"<div class="project">
+a:4:{s:16:"__cache_contents";a:1:{i:0;a:12:{s:2:"id";s:1:"1";s:7:"created";s:19:"2014-02-22 17:27:05";s:7:"updated";s:19:"2014-04-27 14:22:42";s:10:"created_by";s:1:"1";s:14:"ordering_count";s:1:"1";s:10:"subheading";s:52:"Hi, I'm Adam Conder and I develop for mobile and web";s:8:"projects";s:4230:"<div class="project">
 <div class="project-information">
 <div class="project-title">
 <h4>Playlist a Day</h4>
@@ -50,9 +50,9 @@ a:4:{s:16:"__cache_contents";a:1:{i:0;a:12:{s:2:"id";s:1:"1";s:7:"created";s:19:
 <h5>Featured in:</h5>
 
 <ul>
-	<li><a href="http://www.digitalspy.co.uk/tech/news/a523788/playlistsnet-focuses-on-music-discovery-with-new-ios-app.html">Digital Spy</a></li>
-	<li><a href="http://thenextweb.com/apps/2013/06/27/sharemyplaylists-rebrands-its-spotify-playlists-app-as-playlists-net/">The Next Web</a></li>
-	<li><a href="http://techcrunch.com/2013/10/17/coffee-house-blues/">TechCrunch</a></li>
+	<li><a href="&quot;http://www.digitalspy.co.uk/tech/news/a523788/playlistsnet-focuses-on-music-discovery-with-new-ios-app.html" style="background-image:url(http://i1.cdnds.net/svg/digitalspy.svg)">Digital Spy</a></li>
+	<li><a href="http://thenextweb.com/apps/2013/06/27/sharemyplaylists-rebrands-its-spotify-playlists-app-as-playlists-net/" style="background-image:url(http://cdn3.tnwcdn.com/plus/img/tnw-brandmark.svg)">The Next Web</a></li>
+	<li><a href="http://techcrunch.com/2013/10/17/coffee-house-blues/" style="background-image:url(http://s1.wp.com/wp-content/themes/vip/techcrunch-2013/assets/images/logo.svg)">TechCrunch</a></li>
 </ul>
 </div>
 
@@ -92,5 +92,4 @@ a:4:{s:16:"__cache_contents";a:1:{i:0;a:12:{s:2:"id";s:1:"1";s:7:"created";s:19:
 </div>
 
 <div class="clearFix">&nbsp;</div>
-</div>
-";s:22:"freelance_availability";s:3:"yes";s:19:"created_by||user_id";s:1:"1";s:17:"created_by||email";s:19:"adam@adamconder.com";s:20:"created_by||username";s:10:"adamconder";s:24:"created_by||display_name";s:11:"Adam Conder";}}s:15:"__cache_created";i:1397586948;s:20:"__cache_dependencies";a:0:{}s:15:"__cache_expires";i:1397595948;}
+</div>";s:22:"freelance_availability";s:3:"yes";s:19:"created_by||user_id";s:1:"1";s:17:"created_by||email";s:19:"adam@adamconder.com";s:20:"created_by||username";s:10:"adamconder";s:24:"created_by||display_name";s:11:"Adam Conder";}}s:15:"__cache_created";i:1398601895;s:20:"__cache_dependencies";a:0:{}s:15:"__cache_expires";i:1398610895;}

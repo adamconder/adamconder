@@ -10,13 +10,13 @@
 					{{ if slogan }}<p class="post-slogan">{{ slogan }}</p>{{ endif }}
 				</div>
 				<div class="post-date">
-					<p>{{ helper:date timestamp=created_on format="d-m-Y" }}<p>
-					<!-- <p>About {{# helper:timespan timestamp=created_on #}} ago</p> -->
-					<p class="post-author">{{ created_by:display_name }}</p>
+					<p>Posted on {{ helper:date timestamp=created_on format="d-m-Y" }}<p>
+					<!-- <p>Posted {{ helper:timespan timestamp=created_on }} ago</p> -->
+					<p class="post-author">Posted by {{ created_by:display_name }}</p>
 
 					{{# if category }}
-							{{ helper:lang line="blog:category_label" }}
-							<!-- <p>Posted in category: <span class="category"><a href="{{ url:site }}blog/category/{{ category:slug }}">{{ category:title }}</a></span></p> -->
+							<!-- {{ helper:lang line="blog:category_label" }} -->
+							<p>Posted in category: <span class="category"><a href="{{ url:site }}blog/category/{{ category:slug }}">{{ category:title }}</a></span></p>
 					{{ endif #}}
 
 					<!-- Tags -->

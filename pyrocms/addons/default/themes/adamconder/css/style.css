@@ -41,7 +41,7 @@ Author: Adam Conder
 Fonts and titles
 */
 
-h1, h2, h3, h4, h5, h6 { font-weight: 400; margin: 0 0 0.4em 0; }
+h1, h2, h3, h4, h5, h6 { font-weight: 300; margin: 0 0 0.4em 0; }
 
 h1 { font-size: 34px; font-size: 3.4em; }
 h2 { font-size: 28px; font-size: 2.0em; }
@@ -51,7 +51,7 @@ h5 { font-size: 20px; font-size: 1.2em; color: #D37F84; }
 
 p { margin: 0 0 1em 0; line-height: 1.3em; font-size: 16px; font-size: 1em; }
 p[style] { margin: 0 0 1em 0 !important; line-height: 1.3em !important; font-size: 16px!important; font-size: 1em !important; font-family: 'Roboto', sans-serif!important; }
-blockquote { font-size: 24px; font-size: 1.2em; text-align: center; font-weight: 400; font-style: italic; margin: 1em; padding: 1em 2em; color: #D37F84; }
+blockquote { font-size: 24px; font-size: 1.2em; text-align: center; font-weight: 300; font-style: italic; margin: 1em; padding: 1em 2em; color: #D37F84; }
 ul { 
 	margin: 1em; 
 	list-style: circle; 
@@ -111,7 +111,7 @@ header {
 	top: 0;
 	left: 0;
 	z-index: 100;
-	background-color: rgba(255,255,255,0.9);
+	/*background-color: rgba(255,255,255,0.9);*/
 }
 
 header > section#logo {
@@ -273,7 +273,7 @@ nav#primary ul li a:hover
 nav#primary ul li:last-child
 {
 	margin: 0;
-	padding: 0;
+	padding: 0 0 1em 0;
 }
 
 
@@ -294,11 +294,6 @@ nav#primary ul li:last-child
 		clear: both;
 	}
 
-	nav#primary ul
-	{
-		margin: 0.5em 0;
-	}
-
 	nav#primary ul li 
 	{
 		float: none;
@@ -307,8 +302,18 @@ nav#primary ul li:last-child
 		line-height: 1.5em;
 	}
 
+	nav#primary ul li a:hover
+	{
+		border: none;
+	}
+
 	.home .container #content {
-		margin-top: 260px;
+		margin-top: 120px;
+	}
+
+	blockquote
+	{
+		padding: 0em;
 	}
 }
 
@@ -451,10 +456,69 @@ div.project > div.project-information > div.project-title
 	margin: 1em 0;
 }
 
+.project-featured > ul
+{
+	list-style: none;
+}
+
+.project-featured-in > ul li 
+{
+	width: 10em;
+	height: auto;
+	display:inline-block;
+	margin: 2em;
+	float:left;
+}
+
+.project-featured-in > ul li:first-child
+{
+	margin-left: 0;
+}
+
+.project-featured-in > ul li a
+{
+	text-indent: -999em;
+	height: 3em;
+	width: 100%;
+	display:inline-block;
+	background-size: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
 @media only screen and (max-width : 568px) {
+
+
+	.project-featured-in > ul 
+	{
+		margin: 0em;
+	}
+
+	.project-featured-in > ul li
+	{
+		width: 50%;
+		margin: 2em 0;
+	}
+
+	.project-featured-in > ul li a { background-size: 80%; }
+
 	div.project > div.project-information > div.project-title h4
 	{
 		padding: 0.5em 0 0 0;
+	}
+
+	/* Make the organisation information full width on mobile devices*/
+	.project-info, .project-organisation
+	{
+		float: none;
+		width: 100%;
+	}
+
+	.project-organisation a 
+	{
+		float: none;
+		width: 100%;
+		padding: 0.5em 0;
 	}
 }
 
@@ -467,14 +531,17 @@ div.project div.project-title > p.project-slogan
 /* Project Tags */
 div.project > div.project-information > div.project-tags
 {
-	margin: 20px 0 20px 0;
+	margin: 2em 0;
+	display: block;
+	clear:both;
+	width: 100%;
+	height: auto;
 }
 div.project > div.project-information > div.project-tags > span
 {
 	display: inline-block;
-	margin-right: 10px;
-	margin-bottom: 10px;
-	padding: 5px 10px;
+	margin: 0.5em 1em 0.5em 0;
+	padding: 0.5em 1em;
 	color: #D37F84;
 	background-color: transparent;
 	text-transform: lowercase;
@@ -638,9 +705,11 @@ article.post div.post-information > div.post-date p
 
 	article.post div.post-information > div.post-title, article.post div.post-information > div.post-date
 	{
-		float: left;
-		width: 50%;
+		float: none;
+		width: 100%;
 		margin: 1em 0;
+		text-align: left;
+		max-width: 100%;
 	}
 }
 
@@ -838,6 +907,8 @@ body.contact section#content > article.page
 body.contact input, body.contact select
 {
 	font-family: 'Roboto', sans-serif;
+	 -webkit-appearance:none;  
+    -webkit-border-radius:0px;
 }
 body.contact form 
 {

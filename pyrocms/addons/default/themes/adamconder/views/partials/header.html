@@ -26,6 +26,7 @@
   	{{ theme:css file="plugins.css" }}
 	{{ theme:css file="normalize.css" }}
 	{{ theme:css file="style.css" }}
+	{{ theme:css file="responsive-nav.css" }}
 
 	<!-- Syntax highlighter -->
 	<!-- <link rel="stylesheet" href="{{ url:base }}addons/default/themes/adamconder/js/highlight.js/src/styles/solarized_light.css" type="text/css" /> -->
@@ -38,6 +39,7 @@
   	{{ theme:js file="libs/jquery.js" }}
   	{{# theme:js file="highlight.js/src/highlight.js" #}}
   	{{ theme:js file="script.js" }}
+  	{{ theme:js file="libs/responsive-nav.min.js"}}
 
 	{{ template:metadata }}
 	
@@ -57,6 +59,26 @@
             mapOptions);
       }
       google.maps.event.addDomListener(window, 'load', initialize);
+
+      // navigation
+      $(function(){
+	      var navigation = responsiveNav(".nav-collapse", {
+	        animate: true,                    // Boolean: Use CSS3 transitions, true or false
+	        transition: 284,                  // Integer: Speed of the transition, in milliseconds
+	        label: "Menu",                    // String: Label for the navigation toggle
+	        insert: "before",                  // String: Insert the toggle before or after the navigation
+	        customToggle: "",                 // Selector: Specify the ID of a custom toggle
+	        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+	        openPos: "relative",              // String: Position of the opened nav, relative or static
+	        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+	        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+	        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+	        init: function(){},               // Function: Init callback
+	        open: function(){},               // Function: Open callback
+	        close: function(){}               // Function: Close callback
+	      });
+      });
+
     </script>
 
 </head>
@@ -73,7 +95,7 @@
 			
 			<div id="nav-wrapper">
 				<div id="nav-cell">
-					<nav id="primary">
+					<nav id="primary" class="nav-collapse">
 						<ul>
 							{{ navigation:links group="header" }}
 						</ul>
